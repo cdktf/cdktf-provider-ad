@@ -205,6 +205,8 @@ public resetWinrmUseNtlm(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.provider.AdProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.provider.AdProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.provider.AdProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -237,6 +239,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.provider.AdProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-ad'
+
+provider.AdProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.provider.AdProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-ad.provider.AdProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-ad'
+
+provider.AdProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.provider.AdProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -947,6 +977,8 @@ public resetPre2Kname(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.computer.Computer.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.computer.Computer.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -979,6 +1011,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.computer.Computer.isTerraformElement"></a>
+
+```typescript
+import { computer } from '@cdktf/provider-ad'
+
+computer.Computer.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.computer.Computer.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.computer.Computer.isTerraformResource"></a>
+
+```typescript
+import { computer } from '@cdktf/provider-ad'
+
+computer.Computer.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.computer.Computer.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1590,6 +1650,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -1622,6 +1684,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformElement"></a>
+
+```typescript
+import { dataAdComputer } from '@cdktf/provider-ad'
+
+dataAdComputer.DataAdComputer.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformDataSource"></a>
+
+```typescript
+import { dataAdComputer } from '@cdktf/provider-ad'
+
+dataAdComputer.DataAdComputer.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2171,6 +2261,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -2203,6 +2295,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformElement"></a>
+
+```typescript
+import { dataAdGpo } from '@cdktf/provider-ad'
+
+dataAdGpo.DataAdGpo.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformDataSource"></a>
+
+```typescript
+import { dataAdGpo } from '@cdktf/provider-ad'
+
+dataAdGpo.DataAdGpo.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2705,6 +2825,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdGroup.DataAdGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -2737,6 +2859,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformElement"></a>
+
+```typescript
+import { dataAdGroup } from '@cdktf/provider-ad'
+
+dataAdGroup.DataAdGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformDataSource"></a>
+
+```typescript
+import { dataAdGroup } from '@cdktf/provider-ad'
+
+dataAdGroup.DataAdGroup.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3333,6 +3483,8 @@ public resetPath(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -3365,6 +3517,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformElement"></a>
+
+```typescript
+import { dataAdOu } from '@cdktf/provider-ad'
+
+dataAdOu.DataAdOu.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformDataSource"></a>
+
+```typescript
+import { dataAdOu } from '@cdktf/provider-ad'
+
+dataAdOu.DataAdOu.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3922,6 +4102,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -3954,6 +4136,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformElement"></a>
+
+```typescript
+import { dataAdUser } from '@cdktf/provider-ad'
+
+dataAdUser.DataAdUser.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformDataSource"></a>
+
+```typescript
+import { dataAdUser } from '@cdktf/provider-ad'
+
+dataAdUser.DataAdUser.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4818,6 +5028,8 @@ public resetOrder(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.gplink.Gplink.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gplink.Gplink.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4850,6 +5062,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.gplink.Gplink.isTerraformElement"></a>
+
+```typescript
+import { gplink } from '@cdktf/provider-ad'
+
+gplink.Gplink.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gplink.Gplink.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.gplink.Gplink.isTerraformResource"></a>
+
+```typescript
+import { gplink } from '@cdktf/provider-ad'
+
+gplink.Gplink.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gplink.Gplink.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5450,6 +5690,8 @@ public resetStatus(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.gpo.Gpo.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpo.Gpo.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -5482,6 +5724,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.gpo.Gpo.isTerraformElement"></a>
+
+```typescript
+import { gpo } from '@cdktf/provider-ad'
+
+gpo.Gpo.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gpo.Gpo.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.gpo.Gpo.isTerraformResource"></a>
+
+```typescript
+import { gpo } from '@cdktf/provider-ad'
+
+gpo.Gpo.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gpo.Gpo.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6301,6 +6571,8 @@ public resetSystemServices(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -6333,6 +6605,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformElement"></a>
+
+```typescript
+import { gpoSecurity } from '@cdktf/provider-ad'
+
+gpoSecurity.GpoSecurity.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformResource"></a>
+
+```typescript
+import { gpoSecurity } from '@cdktf/provider-ad'
+
+gpoSecurity.GpoSecurity.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7109,6 +7409,8 @@ public resetScope(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.group.Group.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.group.Group.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.group.Group.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7141,6 +7443,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.group.Group.isTerraformElement"></a>
+
+```typescript
+import { group } from '@cdktf/provider-ad'
+
+group.Group.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.group.Group.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.group.Group.isTerraformResource"></a>
+
+```typescript
+import { group } from '@cdktf/provider-ad'
+
+group.Group.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.group.Group.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7764,6 +8094,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.groupMembership.GroupMembership.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7796,6 +8128,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformElement"></a>
+
+```typescript
+import { groupMembership } from '@cdktf/provider-ad'
+
+groupMembership.GroupMembership.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformResource"></a>
+
+```typescript
+import { groupMembership } from '@cdktf/provider-ad'
+
+groupMembership.GroupMembership.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8330,6 +8690,8 @@ public resetProtected(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.ou.Ou.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.ou.Ou.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.ou.Ou.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -8362,6 +8724,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.ou.Ou.isTerraformElement"></a>
+
+```typescript
+import { ou } from '@cdktf/provider-ad'
+
+ou.Ou.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.ou.Ou.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.ou.Ou.isTerraformResource"></a>
+
+```typescript
+import { ou } from '@cdktf/provider-ad'
+
+ou.Ou.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.ou.Ou.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9186,6 +9576,8 @@ public resetTrustedForDelegation(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-ad.user.User.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ad.user.User.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.user.User.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -9218,6 +9610,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ad.user.User.isTerraformElement"></a>
+
+```typescript
+import { user } from '@cdktf/provider-ad'
+
+user.User.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.user.User.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ad.user.User.isTerraformResource"></a>
+
+```typescript
+import { user } from '@cdktf/provider-ad'
+
+user.User.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.user.User.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
