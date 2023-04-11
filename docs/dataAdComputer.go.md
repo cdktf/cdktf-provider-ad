@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ad/d/computer ad_com
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadcomputer"
 
 dataadcomputer.NewDataAdComputer(scope Construct, id *string, config DataAdComputerConfig) DataAdComputer
 ```
@@ -294,7 +294,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadcomputer"
 
 dataadcomputer.DataAdComputer_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadcomputer"
 
 dataadcomputer.DataAdComputer_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataadcomputer.DataAdComputer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadcomputer"
 
 dataadcomputer.DataAdComputer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadcomputer"
 
 &dataadcomputer.DataAdComputerConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ad/d/gpo ad_gpo}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadgpo"
 
 dataadgpo.NewDataAdGpo(scope Construct, id *string, config DataAdGpoConfig) DataAdGpo
 ```
@@ -287,7 +287,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadgpo"
 
 dataadgpo.DataAdGpo_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadgpo"
 
 dataadgpo.DataAdGpo_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataadgpo.DataAdGpo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadgpo"
 
 dataadgpo.DataAdGpo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdGpo.DataAdGpoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v3/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadgpo"
 
 &dataadgpo.DataAdGpoConfig {
 	Connection: interface{},
