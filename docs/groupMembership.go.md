@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ad/r/group_membershi
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.groupMembership.GroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/groupmembership"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/groupmembership"
 
 groupmembership.NewGroupMembership(scope Construct, id *string, config GroupMembershipConfig) GroupMembership
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.groupMembership.GroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/groupmembership"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/groupmembership"
 
 groupmembership.GroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/groupmembership"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/groupmembership"
 
 groupmembership.GroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ groupmembership.GroupMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.groupMembership.GroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/groupmembership"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/groupmembership"
 
 groupmembership.GroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.groupMembership.GroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/groupmembership"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/groupmembership"
 
 &groupmembership.GroupMembershipConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ad/r/user ad_user}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/user"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -518,7 +518,7 @@ func ResetTrustedForDelegation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/user"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/user"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/user"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -1643,7 +1643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/user"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/user"
 
 &user.UserConfig {
 	Connection: interface{},
