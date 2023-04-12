@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ad/r/group ad_group}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -294,7 +294,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/group"
 
 &group.GroupConfig {
 	Connection: interface{},
