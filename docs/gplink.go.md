@@ -4,7 +4,7 @@
 
 ### Gplink <a name="Gplink" id="@cdktf/provider-ad.gplink.Gplink"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/r/gplink ad_gplink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink ad_gplink}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gplink.Gplink.Initializer"></a>
 
@@ -363,7 +363,7 @@ gplink.Gplink_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.Gplink.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -469,10 +469,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.gplink.Gplink.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -675,7 +675,7 @@ import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/gplink"
 
 &gplink.GplinkConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -695,7 +695,7 @@ import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/gplink"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/gplink"
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.targetDn">TargetDn</a></code> | <code>*string</code> | The DN of the object the GPO will be linked to. |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Controls the state of the GP link between a GPO and a container object. |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.enforced">Enforced</a></code> | <code>interface{}</code> | If set to true, the GPO will be enforced on the container object. |
-| <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#id Gplink#id}. |
+| <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#id Gplink#id}. |
 | <code><a href="#@cdktf/provider-ad.gplink.GplinkConfig.property.order">Order</a></code> | <code>*f64</code> | Sets the precedence between multiple GPOs linked to the same container object. |
 
 ---
@@ -723,10 +723,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.gplink.GplinkConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -790,7 +790,7 @@ GpoGuid *string
 
 The GUID of the GPO that will be linked to the container object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#gpo_guid Gplink#gpo_guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#gpo_guid Gplink#gpo_guid}
 
 ---
 
@@ -804,7 +804,7 @@ TargetDn *string
 
 The DN of the object the GPO will be linked to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#target_dn Gplink#target_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#target_dn Gplink#target_dn}
 
 ---
 
@@ -818,7 +818,7 @@ Enabled interface{}
 
 Controls the state of the GP link between a GPO and a container object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#enabled Gplink#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#enabled Gplink#enabled}
 
 ---
 
@@ -832,7 +832,7 @@ Enforced interface{}
 
 If set to true, the GPO will be enforced on the container object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#enforced Gplink#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#enforced Gplink#enforced}
 
 ---
 
@@ -844,7 +844,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#id Gplink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#id Gplink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -861,7 +861,7 @@ Order *f64
 
 Sets the precedence between multiple GPOs linked to the same container object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gplink#order Gplink#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#order Gplink#order}
 
 ---
 

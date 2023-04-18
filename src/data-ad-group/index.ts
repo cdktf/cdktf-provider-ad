@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/d/group
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataAdGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The group's identifier. It can be the group's GUID, SID, Distinguished Name, or SAM Account Name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/group#group_id DataAdGroup#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/group#group_id DataAdGroup#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/group#id DataAdGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/group#id DataAdGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataAdGroupConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/d/group ad_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/group ad_group}
 */
 export class DataAdGroup extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataAdGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/d/group ad_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/group ad_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -4,7 +4,7 @@
 
 ### Computer <a name="Computer" id="@cdktf/provider-ad.computer.Computer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/r/computer ad_computer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer ad_computer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.computer.Computer.Initializer"></a>
 
@@ -363,7 +363,7 @@ Computer.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.computer.Computer.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.computer.Computer.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -470,10 +470,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.computer.Computer.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -686,7 +686,7 @@ using HashiCorp.Cdktf.Providers.Ad;
 
 new ComputerConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -705,7 +705,7 @@ new ComputerConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -714,7 +714,7 @@ new ComputerConfig {
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.name">Name</a></code> | <code>string</code> | The name for the computer account. |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.container">Container</a></code> | <code>string</code> | The DN of the container used to hold the computer account. |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.description">Description</a></code> | <code>string</code> | Specifies a description of the object. This parameter sets the value of the Description property for the computer object. |
-| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}. |
+| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}. |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.pre2Kname">Pre2Kname</a></code> | <code>string</code> | The pre-win2k name for the computer account. |
 
 ---
@@ -732,10 +732,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.computer.ComputerConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -799,7 +799,7 @@ public string Name { get; set; }
 
 The name for the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#name Computer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#name Computer#name}
 
 ---
 
@@ -813,7 +813,7 @@ public string Container { get; set; }
 
 The DN of the container used to hold the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#container Computer#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#container Computer#container}
 
 ---
 
@@ -827,7 +827,7 @@ public string Description { get; set; }
 
 Specifies a description of the object. This parameter sets the value of the Description property for the computer object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#description Computer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#description Computer#description}
 
 ---
 
@@ -839,7 +839,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ public string Pre2Kname { get; set; }
 
 The pre-win2k name for the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#pre2kname Computer#pre2kname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#pre2kname Computer#pre2kname}
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/d/gpo
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataAdGpoConfig extends cdktf.TerraformMetaArguments {
   /**
   * GUID of the GPO.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/gpo#guid DataAdGpo#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo#guid DataAdGpo#guid}
   */
   readonly guid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/gpo#id DataAdGpo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo#id DataAdGpo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,13 +23,13 @@ export interface DataAdGpoConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the GPO.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/gpo#name DataAdGpo#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo#name DataAdGpo#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/d/gpo ad_gpo}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo ad_gpo}
 */
 export class DataAdGpo extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataAdGpo extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/d/gpo ad_gpo} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo ad_gpo} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

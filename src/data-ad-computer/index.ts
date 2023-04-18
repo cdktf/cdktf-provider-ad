@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/d/computer
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface DataAdComputerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#computer_id DataAdComputer#computer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#computer_id DataAdComputer#computer_id}
   */
   readonly computerId?: string;
   /**
   * The Distinguished Name of the computer object. This field is deprecated in favour of `computer_id`. In the future this field will be read-only.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#dn DataAdComputer#dn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#dn DataAdComputer#dn}
   */
   readonly dn?: string;
   /**
   * The GUID of the computer object. This field is deprecated in favour of `computer_id`. In the future this field will be read-only.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#guid DataAdComputer#guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#guid DataAdComputer#guid}
   */
   readonly guid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#id DataAdComputer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#id DataAdComputer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +35,7 @@ export interface DataAdComputerConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/d/computer ad_computer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer ad_computer}
 */
 export class DataAdComputer extends cdktf.TerraformDataSource {
 
@@ -49,7 +49,7 @@ export class DataAdComputer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/d/computer ad_computer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer ad_computer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
