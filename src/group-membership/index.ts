@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/r/group_membership
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GroupMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the group. This can be a GUID, a SID, a Distinguished Name, or the SAM Account Name of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group_membership#group_id GroupMembership#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership#group_id GroupMembership#group_id}
   */
   readonly groupId: string;
   /**
   * A list of member AD Principals. Each principal can be identified by its GUID, SID, Distinguished Name, or SAM Account Name. Only one is required
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group_membership#group_members GroupMembership#group_members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership#group_members GroupMembership#group_members}
   */
   readonly groupMembers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group_membership#id GroupMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership#id GroupMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,7 +29,7 @@ export interface GroupMembershipConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/r/group_membership ad_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership ad_group_membership}
 */
 export class GroupMembership extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class GroupMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/r/group_membership ad_group_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership ad_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

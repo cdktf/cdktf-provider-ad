@@ -4,12 +4,12 @@
 
 ### DataAdOu <a name="DataAdOu" id="@cdktf/provider-ad.dataAdOu.DataAdOu"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/d/ou ad_ou}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou ad_ou}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdOu.DataAdOu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.NewDataAdOu(scope Construct, id *string, config DataAdOuConfig) DataAdOu
 ```
@@ -301,7 +301,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataadou.DataAdOu_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ dataadou.DataAdOu_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.dataAdOu.DataAdOu.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -656,11 +656,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdOu.DataAdOuConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 &dataadou.DataAdOuConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -679,14 +679,14 @@ import "github.com/cdktf/cdktf-provider-ad-go/ad/v4/dataadou"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.dn">Dn</a></code> | <code>*string</code> | Distinguished Name of the OU object. |
-| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/ou#id DataAdOu#id}. |
+| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#id DataAdOu#id}. |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.name">Name</a></code> | <code>*string</code> | Name of the OU object. If this is used then the `path` attribute needs to be set as well. |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.ouId">OuId</a></code> | <code>*string</code> | The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name. |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.path">Path</a></code> | <code>*string</code> | Path of the OU object. If this is used then the `Name` attribute needs to be set as well. |
@@ -706,10 +706,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.dataAdOu.DataAdOuConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -773,7 +773,7 @@ Dn *string
 
 Distinguished Name of the OU object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/ou#dn DataAdOu#dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#dn DataAdOu#dn}
 
 ---
 
@@ -785,7 +785,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/ou#id DataAdOu#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#id DataAdOu#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -802,7 +802,7 @@ Name *string
 
 Name of the OU object. If this is used then the `path` attribute needs to be set as well.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/ou#name DataAdOu#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#name DataAdOu#name}
 
 ---
 
@@ -816,7 +816,7 @@ OuId *string
 
 The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/ou#ou_id DataAdOu#ou_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#ou_id DataAdOu#ou_id}
 
 ---
 
@@ -830,7 +830,7 @@ Path *string
 
 Path of the OU object. If this is used then the `Name` attribute needs to be set as well.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/ou#path DataAdOu#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#path DataAdOu#path}
 
 ---
 

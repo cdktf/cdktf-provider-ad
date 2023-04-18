@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,91 +10,91 @@ export interface AdProviderConfig {
   /**
   * Use a specific domain controller. (default: none, environment variable: AD_DC)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#domain_controller AdProvider#domain_controller}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#domain_controller AdProvider#domain_controller}
   */
   readonly domainController?: string;
   /**
   * Path to kerberos configuration file. (default: none, environment variable: AD_KRB_CONF)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_conf AdProvider#krb_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_conf AdProvider#krb_conf}
   */
   readonly krbConf?: string;
   /**
   * Path to a keytab file to be used instead of a password
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_keytab AdProvider#krb_keytab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_keytab AdProvider#krb_keytab}
   */
   readonly krbKeytab?: string;
   /**
   * The name of the kerberos realm (domain) we will use for authentication. (default: "", environment variable: AD_KRB_REALM)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_realm AdProvider#krb_realm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_realm AdProvider#krb_realm}
   */
   readonly krbRealm?: string;
   /**
   * Alternative Service Principal Name. (default: none, environment variable: AD_KRB_SPN)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_spn AdProvider#krb_spn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_spn AdProvider#krb_spn}
   */
   readonly krbSpn?: string;
   /**
   * The hostname of the server we will use to run powershell scripts over WinRM. (Environment variable: AD_HOSTNAME)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_hostname AdProvider#winrm_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_hostname AdProvider#winrm_hostname}
   */
   readonly winrmHostname: string;
   /**
   * Trust unknown certificates. (default: false, environment variable: AD_WINRM_INSECURE)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_insecure AdProvider#winrm_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_insecure AdProvider#winrm_insecure}
   */
   readonly winrmInsecure?: boolean | cdktf.IResolvable;
   /**
   * Pass credentials in WinRM session to create a System.Management.Automation.PSCredential. (default: false, environment variable: AD_WINRM_PASS_CREDENTIALS)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_pass_credentials AdProvider#winrm_pass_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_pass_credentials AdProvider#winrm_pass_credentials}
   */
   readonly winrmPassCredentials?: boolean | cdktf.IResolvable;
   /**
   * The password used to authenticate to the server's WinRM service. (Environment variable: AD_PASSWORD)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_password AdProvider#winrm_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_password AdProvider#winrm_password}
   */
   readonly winrmPassword: string;
   /**
   * The port WinRM is listening for connections. (default: 5985, environment variable: AD_PORT)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_port AdProvider#winrm_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_port AdProvider#winrm_port}
   */
   readonly winrmPort?: number;
   /**
   * The WinRM protocol we will use. (default: http, environment variable: AD_PROTO)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_proto AdProvider#winrm_proto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_proto AdProvider#winrm_proto}
   */
   readonly winrmProto?: string;
   /**
   * Use NTLM authentication. (default: false, environment variable: AD_WINRM_USE_NTLM)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_use_ntlm AdProvider#winrm_use_ntlm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_use_ntlm AdProvider#winrm_use_ntlm}
   */
   readonly winrmUseNtlm?: boolean | cdktf.IResolvable;
   /**
   * The username used to authenticate to the server's WinRM service. (Environment variable: AD_USER)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_username AdProvider#winrm_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_username AdProvider#winrm_username}
   */
   readonly winrmUsername: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#alias AdProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#alias AdProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad ad}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs ad}
 */
 export class AdProvider extends cdktf.TerraformProvider {
 
@@ -108,7 +108,7 @@ export class AdProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad ad} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs ad} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

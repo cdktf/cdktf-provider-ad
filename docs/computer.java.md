@@ -4,7 +4,7 @@
 
 ### Computer <a name="Computer" id="@cdktf/provider-ad.computer.Computer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/r/computer ad_computer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer ad_computer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.computer.Computer.Initializer"></a>
 
@@ -15,6 +15,7 @@ Computer.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -35,7 +36,7 @@ Computer.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -44,7 +45,7 @@ Computer.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name for the computer account. |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.container">container</a></code> | <code>java.lang.String</code> | The DN of the container used to hold the computer account. |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Specifies a description of the object. This parameter sets the value of the Description property for the computer object. |
-| <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}. |
+| <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}. |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.Initializer.parameter.pre2Kname">pre2Kname</a></code> | <code>java.lang.String</code> | The pre-win2k name for the computer account. |
 
 ---
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.computer.Computer.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name for the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#name Computer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#name Computer#name}
 
 ---
 
@@ -125,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/
 
 The DN of the container used to hold the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#container Computer#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#container Computer#container}
 
 ---
 
@@ -135,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/
 
 Specifies a description of the object. This parameter sets the value of the Description property for the computer object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#description Computer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#description Computer#description}
 
 ---
 
@@ -143,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -156,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The pre-win2k name for the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#pre2kname Computer#pre2kname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#pre2kname Computer#pre2kname}
 
 ---
 
@@ -477,7 +478,7 @@ Computer.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.computer.Computer.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.computer.Computer.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.Computer.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -584,10 +585,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.computer.Computer.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -802,6 +803,7 @@ ComputerConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -822,7 +824,7 @@ ComputerConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -831,7 +833,7 @@ ComputerConfig.builder()
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name for the computer account. |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.container">container</a></code> | <code>java.lang.String</code> | The DN of the container used to hold the computer account. |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.description">description</a></code> | <code>java.lang.String</code> | Specifies a description of the object. This parameter sets the value of the Description property for the computer object. |
-| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}. |
+| <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}. |
 | <code><a href="#@cdktf/provider-ad.computer.ComputerConfig.property.pre2Kname">pre2Kname</a></code> | <code>java.lang.String</code> | The pre-win2k name for the computer account. |
 
 ---
@@ -849,10 +851,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.computer.ComputerConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -916,7 +918,7 @@ public java.lang.String getName();
 
 The name for the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#name Computer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#name Computer#name}
 
 ---
 
@@ -930,7 +932,7 @@ public java.lang.String getContainer();
 
 The DN of the container used to hold the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#container Computer#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#container Computer#container}
 
 ---
 
@@ -944,7 +946,7 @@ public java.lang.String getDescription();
 
 Specifies a description of the object. This parameter sets the value of the Description property for the computer object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#description Computer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#description Computer#description}
 
 ---
 
@@ -956,7 +958,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +975,7 @@ public java.lang.String getPre2Kname();
 
 The pre-win2k name for the computer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#pre2kname Computer#pre2kname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#pre2kname Computer#pre2kname}
 
 ---
 

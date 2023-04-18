@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/r/ou
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface OuConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the OU.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#description Ou#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#description Ou#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#id Ou#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#id Ou#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface OuConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the OU.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#name Ou#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#name Ou#name}
   */
   readonly name: string;
   /**
   * DN of the object that contains the OU.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#path Ou#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#path Ou#path}
   */
   readonly path?: string;
   /**
   * Protect this OU from being deleted accidentaly.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#protected Ou#protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#protected Ou#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/r/ou ad_ou}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou ad_ou}
 */
 export class Ou extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class Ou extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/r/ou ad_ou} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou ad_ou} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

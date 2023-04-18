@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`ad`](https://www.terraform.io/docs/providers/ad).
+Refer to the Terraform Registory for docs: [`ad`](https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs).

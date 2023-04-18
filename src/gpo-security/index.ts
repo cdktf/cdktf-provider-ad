@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/r/gpo_security
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GpoSecurityConfig extends cdktf.TerraformMetaArguments {
   /**
   * The GUID of the container the security settings belong to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#gpo_container GpoSecurity#gpo_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#gpo_container GpoSecurity#gpo_container}
   */
   readonly gpoContainer: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#id GpoSecurity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#id GpoSecurity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,73 +23,73 @@ export interface GpoSecurityConfig extends cdktf.TerraformMetaArguments {
   /**
   * account_lockout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#account_lockout GpoSecurity#account_lockout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#account_lockout GpoSecurity#account_lockout}
   */
   readonly accountLockout?: GpoSecurityAccountLockout;
   /**
   * application_log block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#application_log GpoSecurity#application_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#application_log GpoSecurity#application_log}
   */
   readonly applicationLog?: GpoSecurityApplicationLog;
   /**
   * audit_log block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_log GpoSecurity#audit_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_log GpoSecurity#audit_log}
   */
   readonly auditLog?: GpoSecurityAuditLog;
   /**
   * event_audit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#event_audit GpoSecurity#event_audit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#event_audit GpoSecurity#event_audit}
   */
   readonly eventAudit?: GpoSecurityEventAudit;
   /**
   * filesystem block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#filesystem GpoSecurity#filesystem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#filesystem GpoSecurity#filesystem}
   */
   readonly filesystem?: GpoSecurityFilesystem[] | cdktf.IResolvable;
   /**
   * kerberos_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#kerberos_policy GpoSecurity#kerberos_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#kerberos_policy GpoSecurity#kerberos_policy}
   */
   readonly kerberosPolicy?: GpoSecurityKerberosPolicy;
   /**
   * password_policies block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#password_policies GpoSecurity#password_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#password_policies GpoSecurity#password_policies}
   */
   readonly passwordPolicies?: GpoSecurityPasswordPolicies;
   /**
   * registry_keys block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#registry_keys GpoSecurity#registry_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#registry_keys GpoSecurity#registry_keys}
   */
   readonly registryKeys?: GpoSecurityRegistryKeys[] | cdktf.IResolvable;
   /**
   * registry_values block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#registry_values GpoSecurity#registry_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#registry_values GpoSecurity#registry_values}
   */
   readonly registryValues?: GpoSecurityRegistryValues[] | cdktf.IResolvable;
   /**
   * restricted_groups block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#restricted_groups GpoSecurity#restricted_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#restricted_groups GpoSecurity#restricted_groups}
   */
   readonly restrictedGroups?: GpoSecurityRestrictedGroups[] | cdktf.IResolvable;
   /**
   * system_log block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#system_log GpoSecurity#system_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#system_log GpoSecurity#system_log}
   */
   readonly systemLog?: GpoSecuritySystemLog;
   /**
   * system_services block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#system_services GpoSecurity#system_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#system_services GpoSecurity#system_services}
   */
   readonly systemServices?: GpoSecuritySystemServices[] | cdktf.IResolvable;
 }
@@ -97,25 +97,25 @@ export interface GpoSecurityAccountLockout {
   /**
   * Disconnect SMB sessions when logon hours expire.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#force_logoff_when_hour_expire GpoSecurity#force_logoff_when_hour_expire}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#force_logoff_when_hour_expire GpoSecurity#force_logoff_when_hour_expire}
   */
   readonly forceLogoffWhenHourExpire?: string;
   /**
   * Number of failed logon attempts until a account is locked.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#lockout_bad_count GpoSecurity#lockout_bad_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#lockout_bad_count GpoSecurity#lockout_bad_count}
   */
   readonly lockoutBadCount?: string;
   /**
   * Number of minutes a locked out account must remain locked out.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#lockout_duration GpoSecurity#lockout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#lockout_duration GpoSecurity#lockout_duration}
   */
   readonly lockoutDuration?: string;
   /**
   * Number of minutes a account will remain locked after a failed logon attempt.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#reset_lockout_count GpoSecurity#reset_lockout_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#reset_lockout_count GpoSecurity#reset_lockout_count}
   */
   readonly resetLockoutCount?: string;
 }
@@ -251,25 +251,25 @@ export interface GpoSecurityApplicationLog {
   /**
   * Control log retention. Values: 0: overwrite events as needed, 1: overwrite events as specified specified by `retention_days`, 2: never overwrite events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_log_retention_period GpoSecurity#audit_log_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_log_retention_period GpoSecurity#audit_log_retention_period}
   */
   readonly auditLogRetentionPeriod?: string;
   /**
   * Maximum size of log in KiloBytes. (64-4194240)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#maximum_log_size GpoSecurity#maximum_log_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#maximum_log_size GpoSecurity#maximum_log_size}
   */
   readonly maximumLogSize?: string;
   /**
   * Restrict access to logs for guest users. A non-zero value restricts access to guest users.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#restrict_guest_access GpoSecurity#restrict_guest_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#restrict_guest_access GpoSecurity#restrict_guest_access}
   */
   readonly restrictGuestAccess?: string;
   /**
   * Number of days before new events overwrite old events. (1-365)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#retention_days GpoSecurity#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#retention_days GpoSecurity#retention_days}
   */
   readonly retentionDays?: string;
 }
@@ -405,25 +405,25 @@ export interface GpoSecurityAuditLog {
   /**
   * Control log retention. Values: 0: overwrite events as needed, 1: overwrite events as specified specified by `retention_days`, 2: never overwrite events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_log_retention_period GpoSecurity#audit_log_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_log_retention_period GpoSecurity#audit_log_retention_period}
   */
   readonly auditLogRetentionPeriod?: string;
   /**
   * Maximum size of log in KiloBytes. (64-4194240)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#maximum_log_size GpoSecurity#maximum_log_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#maximum_log_size GpoSecurity#maximum_log_size}
   */
   readonly maximumLogSize?: string;
   /**
   * Restrict access to logs for guest users. A non-zero value restricts access to guest users.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#restrict_guest_access GpoSecurity#restrict_guest_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#restrict_guest_access GpoSecurity#restrict_guest_access}
   */
   readonly restrictGuestAccess?: string;
   /**
   * Number of days before new events overwrite old events. (1-365)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#retention_days GpoSecurity#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#retention_days GpoSecurity#retention_days}
   */
   readonly retentionDays?: string;
 }
@@ -559,55 +559,55 @@ export interface GpoSecurityEventAudit {
   /**
   * Audit credential validation.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_account_logon GpoSecurity#audit_account_logon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_account_logon GpoSecurity#audit_account_logon}
   */
   readonly auditAccountLogon?: string;
   /**
   * Audit account management events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_account_manage GpoSecurity#audit_account_manage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_account_manage GpoSecurity#audit_account_manage}
   */
   readonly auditAccountManage?: string;
   /**
   * Audit access attempts to AD objects.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_ds_access GpoSecurity#audit_ds_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_ds_access GpoSecurity#audit_ds_access}
   */
   readonly auditDsAccess?: string;
   /**
   * Audit logon events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_logon_events GpoSecurity#audit_logon_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_logon_events GpoSecurity#audit_logon_events}
   */
   readonly auditLogonEvents?: string;
   /**
   * Audit access attempts to non-AD objects.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_object_access GpoSecurity#audit_object_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_object_access GpoSecurity#audit_object_access}
   */
   readonly auditObjectAccess?: string;
   /**
   * Audit attempts to change a policy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_policy_change GpoSecurity#audit_policy_change}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_policy_change GpoSecurity#audit_policy_change}
   */
   readonly auditPolicyChange?: string;
   /**
   * Audit user attempts of exercising user rights.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_privilege_use GpoSecurity#audit_privilege_use}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_privilege_use GpoSecurity#audit_privilege_use}
   */
   readonly auditPrivilegeUse?: string;
   /**
   * Audit process related events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_process_tracking GpoSecurity#audit_process_tracking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_process_tracking GpoSecurity#audit_process_tracking}
   */
   readonly auditProcessTracking?: string;
   /**
   * Audit system events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_system_events GpoSecurity#audit_system_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_system_events GpoSecurity#audit_system_events}
   */
   readonly auditSystemEvents?: string;
 }
@@ -858,19 +858,19 @@ export interface GpoSecurityFilesystem {
   /**
   * Security descriptor to apply. (https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/f4296d69-1c0f-491f-9587-a960b292d070)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#acl GpoSecurity#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#acl GpoSecurity#acl}
   */
   readonly acl: string;
   /**
   * Path of the file or directory.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#path GpoSecurity#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#path GpoSecurity#path}
   */
   readonly path: string;
   /**
   * Control permission propagation. 0: Propagate permissions to all subfolders and files, 1: Replace existing permissions on all subfolders and files, 2: Do not allow permissions to be replaced.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#propagation_mode GpoSecurity#propagation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#propagation_mode GpoSecurity#propagation_mode}
   */
   readonly propagationMode: string;
 }
@@ -1006,31 +1006,31 @@ export interface GpoSecurityKerberosPolicy {
   /**
   * Maximum time difference, in minutes, between the client clock and the server clock. (0-99999).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#max_clock_skew GpoSecurity#max_clock_skew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#max_clock_skew GpoSecurity#max_clock_skew}
   */
   readonly maxClockSkew?: string;
   /**
   * Number of days during which a ticket-granting ticket can be renewed (0-99999).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#max_renew_age GpoSecurity#max_renew_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#max_renew_age GpoSecurity#max_renew_age}
   */
   readonly maxRenewAge?: string;
   /**
   * Maximum amount of minutes a ticket must be valid to access a service or resource. Minimum should be 10 and maximum should be equal to `max_ticket_age`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#max_service_age GpoSecurity#max_service_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#max_service_age GpoSecurity#max_service_age}
   */
   readonly maxServiceAge?: string;
   /**
   * Maximum amount of hours a ticket-granting ticket is valid (0-99999).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#max_ticket_age GpoSecurity#max_ticket_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#max_ticket_age GpoSecurity#max_ticket_age}
   */
   readonly maxTicketAge?: string;
   /**
   * Control if the session ticket is validated for every request. A non-zero value disables the policy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#ticket_validate_client GpoSecurity#ticket_validate_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#ticket_validate_client GpoSecurity#ticket_validate_client}
   */
   readonly ticketValidateClient?: string;
 }
@@ -1189,37 +1189,37 @@ export interface GpoSecurityPasswordPolicies {
   /**
   * Store password with reversible encryption (0-2^16). The password will not be stored with reversible encryption if the value is set to 0. Reversible encryption will be used in any other case.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#clear_text_password GpoSecurity#clear_text_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#clear_text_password GpoSecurity#clear_text_password}
   */
   readonly clearTextPassword?: string;
   /**
   * Number of days before password expires (-1-999). If set to -1, it means the password never expires.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#maximum_password_age GpoSecurity#maximum_password_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#maximum_password_age GpoSecurity#maximum_password_age}
   */
   readonly maximumPasswordAge?: string;
   /**
   * Number of days a password must be used before changing it (0-999).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#minimum_password_age GpoSecurity#minimum_password_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#minimum_password_age GpoSecurity#minimum_password_age}
   */
   readonly minimumPasswordAge?: string;
   /**
   * Minimum number of characters used in a password (0-2^16). If set to 0, it means no password is required.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#minimum_password_length GpoSecurity#minimum_password_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#minimum_password_length GpoSecurity#minimum_password_length}
   */
   readonly minimumPasswordLength?: string;
   /**
   * Password must meet complexity requirements (0-2^16). If set to 0, then requirements do not apply, any other value means requirements are applied
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#password_complexity GpoSecurity#password_complexity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#password_complexity GpoSecurity#password_complexity}
   */
   readonly passwordComplexity?: string;
   /**
   * The number of unique new passwords that are required before an old password can be reused in association with a user account (0-2^16).  A value of 0 indicates that the password history is disabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#password_history_size GpoSecurity#password_history_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#password_history_size GpoSecurity#password_history_size}
   */
   readonly passwordHistorySize?: string;
 }
@@ -1401,19 +1401,19 @@ export interface GpoSecurityRegistryKeys {
   /**
   * Security descriptor to apply. (https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/f4296d69-1c0f-491f-9587-a960b292d070)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#acl GpoSecurity#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#acl GpoSecurity#acl}
   */
   readonly acl: string;
   /**
   * Fully qualified name of the key (https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rrp/97587de7-3524-4291-8527-3951711      0c0eb)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#key_name GpoSecurity#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#key_name GpoSecurity#key_name}
   */
   readonly keyName: string;
   /**
   * Control permission propagation. 0: Propagate permissions to all subkeys, 1: Replace existing permissions on all subkeys, 2: Do not allow permissions to be replaced on the key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#propagation_mode GpoSecurity#propagation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#propagation_mode GpoSecurity#propagation_mode}
   */
   readonly propagationMode: string;
 }
@@ -1549,19 +1549,19 @@ export interface GpoSecurityRegistryValues {
   /**
   * Fully qualified name of the key (https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-rrp/97587de7-3524-4291-8527-39517110c0eb)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#key_name GpoSecurity#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#key_name GpoSecurity#key_name}
   */
   readonly keyName: string;
   /**
   * The value of the key, matching the type set in `value_type`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#value GpoSecurity#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#value GpoSecurity#value}
   */
   readonly value: string;
   /**
   * Data type of the key's value. 1: String, 2: Expand String, 3: Binary, 4: DWORD, 5: MULTI_SZ.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#value_type GpoSecurity#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#value_type GpoSecurity#value_type}
   */
   readonly valueType: string;
 }
@@ -1697,19 +1697,19 @@ export interface GpoSecurityRestrictedGroups {
   /**
   * Comma separated list of group names or SIDs that this group belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#group_memberof GpoSecurity#group_memberof}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#group_memberof GpoSecurity#group_memberof}
   */
   readonly groupMemberof: string;
   /**
   * Comma separated list of group names or SIDs that are members of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#group_members GpoSecurity#group_members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#group_members GpoSecurity#group_members}
   */
   readonly groupMembers: string;
   /**
   * Name of the group we are managing.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#group_name GpoSecurity#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#group_name GpoSecurity#group_name}
   */
   readonly groupName: string;
 }
@@ -1845,25 +1845,25 @@ export interface GpoSecuritySystemLog {
   /**
   * Control log retention. Values: 0: overwrite events as needed, 1: overwrite events as specified specified by `retention_days`, 2: never overwrite events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#audit_log_retention_period GpoSecurity#audit_log_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#audit_log_retention_period GpoSecurity#audit_log_retention_period}
   */
   readonly auditLogRetentionPeriod?: string;
   /**
   * Maximum size of log in KiloBytes. (64-4194240)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#maximum_log_size GpoSecurity#maximum_log_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#maximum_log_size GpoSecurity#maximum_log_size}
   */
   readonly maximumLogSize?: string;
   /**
   * Restrict access to logs for guest users. A non-zero value restricts access to guest users.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#restrict_guest_access GpoSecurity#restrict_guest_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#restrict_guest_access GpoSecurity#restrict_guest_access}
   */
   readonly restrictGuestAccess?: string;
   /**
   * Number of days before new events overwrite old events. (1-365)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#retention_days GpoSecurity#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#retention_days GpoSecurity#retention_days}
   */
   readonly retentionDays?: string;
 }
@@ -1999,19 +1999,19 @@ export interface GpoSecuritySystemServices {
   /**
   * Security descriptor to apply. (https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/f4296d69-1c0f-491f-9587-a960b292d070)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#acl GpoSecurity#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#acl GpoSecurity#acl}
   */
   readonly acl: string;
   /**
   * Name of the service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#service_name GpoSecurity#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#service_name GpoSecurity#service_name}
   */
   readonly serviceName: string;
   /**
   * Startup mode of the service. Possible values are 2: Automatic, 3: Manual, 4: Disabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/gpo_security#startup_mode GpoSecurity#startup_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#startup_mode GpoSecurity#startup_mode}
   */
   readonly startupMode: string;
 }
@@ -2145,7 +2145,7 @@ export class GpoSecuritySystemServicesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/r/gpo_security ad_gpo_security}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security ad_gpo_security}
 */
 export class GpoSecurity extends cdktf.TerraformResource {
 
@@ -2159,7 +2159,7 @@ export class GpoSecurity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/r/gpo_security ad_gpo_security} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security ad_gpo_security} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

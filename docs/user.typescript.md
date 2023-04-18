@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-ad.user.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/r/user ad_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user ad_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.user.User.Initializer"></a>
 
@@ -587,7 +587,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-ad.user.User.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.User.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.user.User.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.user.User.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.User.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.User.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -761,10 +761,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.user.User.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1653,7 +1653,7 @@ const userConfig: user.UserConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.user.UserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.user.UserConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1681,7 +1681,7 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.homeDrive">homeDrive</a></code> | <code>string</code> | Specifies a drive that is associated with the UNC path defined by the HomeDirectory property. |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.homePage">homePage</a></code> | <code>string</code> | Specifies the URL of the home page of the object. |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.homePhone">homePhone</a></code> | <code>string</code> | Specifies the user's home telephone number. This parameter sets the HomePhone property of a user object. |
-| <code><a href="#@cdktf/provider-ad.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#id User#id}. |
+| <code><a href="#@cdktf/provider-ad.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.initialPassword">initialPassword</a></code> | <code>string</code> | The user's initial password. This will be set on creation but will *not* be enforced in subsequent plans. |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.initials">initials</a></code> | <code>string</code> | Specifies the initials that represent part of a user's name. Maximum 6 char. |
 | <code><a href="#@cdktf/provider-ad.user.UserConfig.property.mobilePhone">mobilePhone</a></code> | <code>string</code> | Specifies the user's mobile phone number. This parameter sets the MobilePhone property of a user object. |
@@ -1714,10 +1714,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.user.UserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1781,7 +1781,7 @@ public readonly displayName: string;
 
 The Display Name of an Active Directory user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#display_name User#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#display_name User#display_name}
 
 ---
 
@@ -1795,7 +1795,7 @@ public readonly principalName: string;
 
 The Principal Name of an Active Directory user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#principal_name User#principal_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#principal_name User#principal_name}
 
 ---
 
@@ -1809,7 +1809,7 @@ public readonly samAccountName: string;
 
 The pre-win2k user logon name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#sam_account_name User#sam_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#sam_account_name User#sam_account_name}
 
 ---
 
@@ -1823,7 +1823,7 @@ public readonly cannotChangePassword: boolean | IResolvable;
 
 If set to true, the user will not be allowed to change their password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#cannot_change_password User#cannot_change_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#cannot_change_password User#cannot_change_password}
 
 ---
 
@@ -1837,7 +1837,7 @@ public readonly city: string;
 
 Specifies the user's town or city. This parameter sets the City property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#city User#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#city User#city}
 
 ---
 
@@ -1851,7 +1851,7 @@ public readonly company: string;
 
 Specifies the user's company. This parameter sets the Company property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#company User#company}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#company User#company}
 
 ---
 
@@ -1865,7 +1865,7 @@ public readonly container: string;
 
 A DN of the container object that will be holding the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#container User#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#container User#container}
 
 ---
 
@@ -1879,7 +1879,7 @@ public readonly country: string;
 
 Specifies the country by setting the country code (refer to ISO 3166).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#country User#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#country User#country}
 
 ---
 
@@ -1895,7 +1895,7 @@ JSON encoded map that represents key/value pairs for custom attributes.
 
 Please note that `terraform import` will not import these attributes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#custom_attributes User#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#custom_attributes User#custom_attributes}
 
 ---
 
@@ -1909,7 +1909,7 @@ public readonly department: string;
 
 Specifies the user's department. This parameter sets the Department property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#department User#department}
 
 ---
 
@@ -1923,7 +1923,7 @@ public readonly description: string;
 
 Specifies a description of the object. This parameter sets the value of the Description property for the user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#description User#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#description User#description}
 
 ---
 
@@ -1937,7 +1937,7 @@ public readonly division: string;
 
 Specifies the user's division. This parameter sets the Division property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#division User#division}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#division User#division}
 
 ---
 
@@ -1951,7 +1951,7 @@ public readonly emailAddress: string;
 
 Specifies the user's e-mail address. This parameter sets the EmailAddress property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#email_address User#email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#email_address User#email_address}
 
 ---
 
@@ -1965,7 +1965,7 @@ public readonly employeeId: string;
 
 Specifies the user's employee ID. This parameter sets the EmployeeID property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#employee_id User#employee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#employee_id User#employee_id}
 
 ---
 
@@ -1979,7 +1979,7 @@ public readonly employeeNumber: string;
 
 Specifies the user's employee number. This parameter sets the EmployeeNumber property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#employee_number User#employee_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#employee_number User#employee_number}
 
 ---
 
@@ -1993,7 +1993,7 @@ public readonly enabled: boolean | IResolvable;
 
 If set to false, the user will be disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#enabled User#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#enabled User#enabled}
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly fax: string;
 
 Specifies the user's fax phone number. This parameter sets the Fax property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#fax User#fax}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#fax User#fax}
 
 ---
 
@@ -2021,7 +2021,7 @@ public readonly givenName: string;
 
 Specifies the user's given name. This parameter sets the GivenName property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#given_name User#given_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#given_name User#given_name}
 
 ---
 
@@ -2035,7 +2035,7 @@ public readonly homeDirectory: string;
 
 Specifies a user's home directory. This parameter sets the HomeDirectory property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#home_directory User#home_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#home_directory User#home_directory}
 
 ---
 
@@ -2051,7 +2051,7 @@ Specifies a drive that is associated with the UNC path defined by the HomeDirect
 
 The drive letter is specified as <DriveLetter>: where <DriveLetter> indicates the letter of the drive to associate. The <DriveLetter> must be a single, uppercase letter and the colon is required. This parameter sets the HomeDrive property of the user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#home_drive User#home_drive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#home_drive User#home_drive}
 
 ---
 
@@ -2067,7 +2067,7 @@ Specifies the URL of the home page of the object.
 
 This parameter sets the homePage property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#home_page User#home_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#home_page User#home_page}
 
 ---
 
@@ -2081,7 +2081,7 @@ public readonly homePhone: string;
 
 Specifies the user's home telephone number. This parameter sets the HomePhone property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#home_phone User#home_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#home_phone User#home_phone}
 
 ---
 
@@ -2093,7 +2093,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2110,7 +2110,7 @@ public readonly initialPassword: string;
 
 The user's initial password. This will be set on creation but will *not* be enforced in subsequent plans.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#initial_password User#initial_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#initial_password User#initial_password}
 
 ---
 
@@ -2124,7 +2124,7 @@ public readonly initials: string;
 
 Specifies the initials that represent part of a user's name. Maximum 6 char.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#initials User#initials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#initials User#initials}
 
 ---
 
@@ -2138,7 +2138,7 @@ public readonly mobilePhone: string;
 
 Specifies the user's mobile phone number. This parameter sets the MobilePhone property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -2154,7 +2154,7 @@ Specifies the location of the user's office or place of business.
 
 This parameter sets the Office property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#office User#office}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#office User#office}
 
 ---
 
@@ -2168,7 +2168,7 @@ public readonly officePhone: string;
 
 Specifies the user's office telephone number. This parameter sets the OfficePhone property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#office_phone User#office_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#office_phone User#office_phone}
 
 ---
 
@@ -2182,7 +2182,7 @@ public readonly organization: string;
 
 Specifies the user's organization. This parameter sets the Organization property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#organization User#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#organization User#organization}
 
 ---
 
@@ -2196,7 +2196,7 @@ public readonly otherName: string;
 
 Specifies a name in addition to a user's given name and surname, such as the user's middle name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#other_name User#other_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#other_name User#other_name}
 
 ---
 
@@ -2210,7 +2210,7 @@ public readonly passwordNeverExpires: boolean | IResolvable;
 
 If set to true, the password for this user will not expire.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#password_never_expires User#password_never_expires}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#password_never_expires User#password_never_expires}
 
 ---
 
@@ -2224,7 +2224,7 @@ public readonly poBox: string;
 
 Specifies the user's post office box number. This parameter sets the POBox property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#po_box User#po_box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#po_box User#po_box}
 
 ---
 
@@ -2238,7 +2238,7 @@ public readonly postalCode: string;
 
 Specifies the user's postal code or zip code. This parameter sets the PostalCode property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#postal_code User#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#postal_code User#postal_code}
 
 ---
 
@@ -2254,7 +2254,7 @@ If set to true, a smart card is required to logon.
 
 This parameter sets the SmartCardLoginRequired property for a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#smart_card_logon_required User#smart_card_logon_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#smart_card_logon_required User#smart_card_logon_required}
 
 ---
 
@@ -2268,7 +2268,7 @@ public readonly state: string;
 
 Specifies the user's or Organizational Unit's state or province. This parameter sets the State property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#state User#state}
 
 ---
 
@@ -2282,7 +2282,7 @@ public readonly streetAddress: string;
 
 Specifies the user's street address. This parameter sets the StreetAddress property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -2296,7 +2296,7 @@ public readonly surname: string;
 
 Specifies the user's last name or surname. This parameter sets the Surname property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#surname User#surname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#surname User#surname}
 
 ---
 
@@ -2310,7 +2310,7 @@ public readonly title: string;
 
 Specifies the user's title. This parameter sets the Title property of a user object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#title User#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#title User#title}
 
 ---
 
@@ -2326,7 +2326,7 @@ If set to true, the user account is trusted for Kerberos delegation.
 
 A service that runs under an account that is trusted for Kerberos delegation can assume the identity of a client requesting the service. This parameter sets the TrustedForDelegation property of an account object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/user#trusted_for_delegation User#trusted_for_delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/user#trusted_for_delegation User#trusted_for_delegation}
 
 ---
 

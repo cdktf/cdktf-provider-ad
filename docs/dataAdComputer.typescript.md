@@ -4,7 +4,7 @@
 
 ### DataAdComputer <a name="DataAdComputer" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/d/computer ad_computer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer ad_computer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.Initializer"></a>
 
@@ -362,7 +362,7 @@ dataAdComputer.DataAdComputer.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -637,7 +637,7 @@ const dataAdComputerConfig: dataAdComputer.DataAdComputerConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -646,7 +646,7 @@ const dataAdComputerConfig: dataAdComputer.DataAdComputerConfig = { ... }
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.computerId">computerId</a></code> | <code>string</code> | The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name. |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.dn">dn</a></code> | <code>string</code> | The Distinguished Name of the computer object. |
 | <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.guid">guid</a></code> | <code>string</code> | The GUID of the computer object. |
-| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#id DataAdComputer#id}. |
+| <code><a href="#@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#id DataAdComputer#id}. |
 
 ---
 
@@ -663,10 +663,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -730,7 +730,7 @@ public readonly computerId: string;
 
 The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#computer_id DataAdComputer#computer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#computer_id DataAdComputer#computer_id}
 
 ---
 
@@ -746,7 +746,7 @@ The Distinguished Name of the computer object.
 
 This field is deprecated in favour of `computer_id`. In the future this field will be read-only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#dn DataAdComputer#dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#dn DataAdComputer#dn}
 
 ---
 
@@ -762,7 +762,7 @@ The GUID of the computer object.
 
 This field is deprecated in favour of `computer_id`. In the future this field will be read-only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#guid DataAdComputer#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#guid DataAdComputer#guid}
 
 ---
 
@@ -774,7 +774,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/d/computer#id DataAdComputer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#id DataAdComputer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

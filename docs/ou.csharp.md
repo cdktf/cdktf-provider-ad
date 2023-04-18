@@ -4,7 +4,7 @@
 
 ### Ou <a name="Ou" id="@cdktf/provider-ad.ou.Ou"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad/r/ou ad_ou}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou ad_ou}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.ou.Ou.Initializer"></a>
 
@@ -363,7 +363,7 @@ Ou.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-ad.ou.Ou.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.Ou.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.Ou.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.ou.Ou.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.ou.Ou.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.Ou.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.Ou.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.Ou.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -469,10 +469,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.ou.Ou.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -675,7 +675,7 @@ using HashiCorp.Cdktf.Providers.Ad;
 
 new OuConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -694,7 +694,7 @@ new OuConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -702,7 +702,7 @@ new OuConfig {
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.name">Name</a></code> | <code>string</code> | Name of the OU. |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.description">Description</a></code> | <code>string</code> | Description of the OU. |
-| <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#id Ou#id}. |
+| <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#id Ou#id}. |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.path">Path</a></code> | <code>string</code> | DN of the object that contains the OU. |
 | <code><a href="#@cdktf/provider-ad.ou.OuConfig.property.protected">Protected</a></code> | <code>object</code> | Protect this OU from being deleted accidentaly. |
 
@@ -721,10 +721,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ad.ou.OuConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -788,7 +788,7 @@ public string Name { get; set; }
 
 Name of the OU.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#name Ou#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#name Ou#name}
 
 ---
 
@@ -802,7 +802,7 @@ public string Description { get; set; }
 
 Description of the OU.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#description Ou#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#description Ou#description}
 
 ---
 
@@ -814,7 +814,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#id Ou#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#id Ou#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -831,7 +831,7 @@ public string Path { get; set; }
 
 DN of the object that contains the OU.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#path Ou#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#path Ou#path}
 
 ---
 
@@ -845,7 +845,7 @@ public object Protected { get; set; }
 
 Protect this OU from being deleted accidentaly.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/ou#protected Ou#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#protected Ou#protected}
 
 ---
 

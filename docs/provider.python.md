@@ -4,7 +4,7 @@
 
 ### AdProvider <a name="AdProvider" id="@cdktf/provider-ad.provider.AdProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ad ad}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs ad}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.provider.AdProvider.Initializer"></a>
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 The hostname of the server we will use to run powershell scripts over WinRM. (Environment variable: AD_HOSTNAME).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_hostname AdProvider#winrm_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_hostname AdProvider#winrm_hostname}
 
 ---
 
@@ -86,7 +86,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 The password used to authenticate to the server's WinRM service. (Environment variable: AD_PASSWORD).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_password AdProvider#winrm_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_password AdProvider#winrm_password}
 
 ---
 
@@ -96,7 +96,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 The username used to authenticate to the server's WinRM service. (Environment variable: AD_USER).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_username AdProvider#winrm_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_username AdProvider#winrm_username}
 
 ---
 
@@ -106,7 +106,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#alias AdProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#alias AdProvider#alias}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#al
 
 Use a specific domain controller. (default: none, environment variable: AD_DC).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#domain_controller AdProvider#domain_controller}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#domain_controller AdProvider#domain_controller}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#do
 
 Path to kerberos configuration file. (default: none, environment variable: AD_KRB_CONF).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_conf AdProvider#krb_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_conf AdProvider#krb_conf}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#kr
 
 Path to a keytab file to be used instead of a password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_keytab AdProvider#krb_keytab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_keytab AdProvider#krb_keytab}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#kr
 
 The name of the kerberos realm (domain) we will use for authentication. (default: "", environment variable: AD_KRB_REALM).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_realm AdProvider#krb_realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_realm AdProvider#krb_realm}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#kr
 
 Alternative Service Principal Name. (default: none, environment variable: AD_KRB_SPN).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_spn AdProvider#krb_spn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_spn AdProvider#krb_spn}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#kr
 
 Trust unknown certificates. (default: false, environment variable: AD_WINRM_INSECURE).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_insecure AdProvider#winrm_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_insecure AdProvider#winrm_insecure}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 Pass credentials in WinRM session to create a System.Management.Automation.PSCredential. (default: false, environment variable: AD_WINRM_PASS_CREDENTIALS).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_pass_credentials AdProvider#winrm_pass_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_pass_credentials AdProvider#winrm_pass_credentials}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 The port WinRM is listening for connections. (default: 5985, environment variable: AD_PORT).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_port AdProvider#winrm_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_port AdProvider#winrm_port}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 The WinRM protocol we will use. (default: http, environment variable: AD_PROTO).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_proto AdProvider#winrm_proto}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_proto AdProvider#winrm_proto}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#wi
 
 Use NTLM authentication. (default: false, environment variable: AD_WINRM_USE_NTLM).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_use_ntlm AdProvider#winrm_use_ntlm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_use_ntlm AdProvider#winrm_use_ntlm}
 
 ---
 
@@ -926,7 +926,7 @@ winrm_hostname: str
 
 The hostname of the server we will use to run powershell scripts over WinRM. (Environment variable: AD_HOSTNAME).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_hostname AdProvider#winrm_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_hostname AdProvider#winrm_hostname}
 
 ---
 
@@ -940,7 +940,7 @@ winrm_password: str
 
 The password used to authenticate to the server's WinRM service. (Environment variable: AD_PASSWORD).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_password AdProvider#winrm_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_password AdProvider#winrm_password}
 
 ---
 
@@ -954,7 +954,7 @@ winrm_username: str
 
 The username used to authenticate to the server's WinRM service. (Environment variable: AD_USER).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_username AdProvider#winrm_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_username AdProvider#winrm_username}
 
 ---
 
@@ -968,7 +968,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#alias AdProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#alias AdProvider#alias}
 
 ---
 
@@ -982,7 +982,7 @@ domain_controller: str
 
 Use a specific domain controller. (default: none, environment variable: AD_DC).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#domain_controller AdProvider#domain_controller}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#domain_controller AdProvider#domain_controller}
 
 ---
 
@@ -996,7 +996,7 @@ krb_conf: str
 
 Path to kerberos configuration file. (default: none, environment variable: AD_KRB_CONF).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_conf AdProvider#krb_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_conf AdProvider#krb_conf}
 
 ---
 
@@ -1010,7 +1010,7 @@ krb_keytab: str
 
 Path to a keytab file to be used instead of a password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_keytab AdProvider#krb_keytab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_keytab AdProvider#krb_keytab}
 
 ---
 
@@ -1024,7 +1024,7 @@ krb_realm: str
 
 The name of the kerberos realm (domain) we will use for authentication. (default: "", environment variable: AD_KRB_REALM).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_realm AdProvider#krb_realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_realm AdProvider#krb_realm}
 
 ---
 
@@ -1038,7 +1038,7 @@ krb_spn: str
 
 Alternative Service Principal Name. (default: none, environment variable: AD_KRB_SPN).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#krb_spn AdProvider#krb_spn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#krb_spn AdProvider#krb_spn}
 
 ---
 
@@ -1052,7 +1052,7 @@ winrm_insecure: typing.Union[bool, IResolvable]
 
 Trust unknown certificates. (default: false, environment variable: AD_WINRM_INSECURE).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_insecure AdProvider#winrm_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_insecure AdProvider#winrm_insecure}
 
 ---
 
@@ -1066,7 +1066,7 @@ winrm_pass_credentials: typing.Union[bool, IResolvable]
 
 Pass credentials in WinRM session to create a System.Management.Automation.PSCredential. (default: false, environment variable: AD_WINRM_PASS_CREDENTIALS).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_pass_credentials AdProvider#winrm_pass_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_pass_credentials AdProvider#winrm_pass_credentials}
 
 ---
 
@@ -1080,7 +1080,7 @@ winrm_port: typing.Union[int, float]
 
 The port WinRM is listening for connections. (default: 5985, environment variable: AD_PORT).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_port AdProvider#winrm_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_port AdProvider#winrm_port}
 
 ---
 
@@ -1094,7 +1094,7 @@ winrm_proto: str
 
 The WinRM protocol we will use. (default: http, environment variable: AD_PROTO).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_proto AdProvider#winrm_proto}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_proto AdProvider#winrm_proto}
 
 ---
 
@@ -1108,7 +1108,7 @@ winrm_use_ntlm: typing.Union[bool, IResolvable]
 
 Use NTLM authentication. (default: false, environment variable: AD_WINRM_USE_NTLM).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad#winrm_use_ntlm AdProvider#winrm_use_ntlm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs#winrm_use_ntlm AdProvider#winrm_use_ntlm}
 
 ---
 

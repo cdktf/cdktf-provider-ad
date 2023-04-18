@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/r/computer
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface ComputerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The DN of the container used to hold the computer account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#container Computer#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#container Computer#container}
   */
   readonly container?: string;
   /**
   * Specifies a description of the object. This parameter sets the value of the Description property for the computer object.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#description Computer#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#description Computer#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#id Computer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#id Computer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,19 +29,19 @@ export interface ComputerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name for the computer account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#name Computer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#name Computer#name}
   */
   readonly name: string;
   /**
   * The pre-win2k name for the computer account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/computer#pre2kname Computer#pre2kname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#pre2kname Computer#pre2kname}
   */
   readonly pre2Kname?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/r/computer ad_computer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer ad_computer}
 */
 export class Computer extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class Computer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/r/computer ad_computer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer ad_computer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

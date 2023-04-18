@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ad/r/group
+// https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The group's category. Can be one of `distribution` or `security` (case sensitive).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#category Group#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#category Group#category}
   */
   readonly category?: string;
   /**
   * A DN of a container object holding the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#container Group#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#container Group#container}
   */
   readonly container: string;
   /**
   * Description of the Group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#description Group#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#description Group#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#id Group#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,25 +35,25 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#name Group#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
   * The pre-win2k name of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#sam_account_name Group#sam_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#sam_account_name Group#sam_account_name}
   */
   readonly samAccountName: string;
   /**
   * The group's scope. Can be one of `global`, `domainlocal`, or `universal` (case sensitive).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ad/r/group#scope Group#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#scope Group#scope}
   */
   readonly scope?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ad/r/group ad_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group ad_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ad/r/group ad_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group ad_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
