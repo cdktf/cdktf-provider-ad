@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`ad`](https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-ad.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
