@@ -1,3 +1,7 @@
+# `ad_ou`
+
+Refer to the Terraform Registory for docs: [`ad_ou`](https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou).
+
 # `ou` Submodule <a name="`ou` Submodule" id="@cdktf/provider-ad.ou"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
