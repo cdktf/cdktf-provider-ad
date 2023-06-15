@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.ou.Ou.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/ou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v5/ou"
 
 ou.NewOu(scope Construct, id *string, config OuConfig) Ou
 ```
@@ -298,7 +298,7 @@ func ResetProtected()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.ou.Ou.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/ou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v5/ou"
 
 ou.Ou_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.ou.Ou.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/ou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v5/ou"
 
 ou.Ou_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ ou.Ou_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.ou.Ou.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/ou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v5/ou"
 
 ou.Ou_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.ou.OuConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/ou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v5/ou"
 
 &ou.OuConfig {
 	Connection: interface{},
