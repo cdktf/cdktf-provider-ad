@@ -5198,7 +5198,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.property.acl">acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.property.propagationMode">propagation_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystem">GpoSecurityFilesystem</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystem">GpoSecurityFilesystem</a>]</code> | *No description.* |
 
 ---
 
@@ -5289,10 +5289,10 @@ propagation_mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GpoSecurityFilesystem, IResolvable]
+internal_value: typing.Union[IResolvable, GpoSecurityFilesystem]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystem">GpoSecurityFilesystem</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystem">GpoSecurityFilesystem</a>]
 
 ---
 
@@ -6576,7 +6576,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.property.acl">acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.property.keyName">key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.property.propagationMode">propagation_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeys">GpoSecurityRegistryKeys</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeys">GpoSecurityRegistryKeys</a>]</code> | *No description.* |
 
 ---
 
@@ -6667,10 +6667,10 @@ propagation_mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GpoSecurityRegistryKeys, IResolvable]
+internal_value: typing.Union[IResolvable, GpoSecurityRegistryKeys]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeys">GpoSecurityRegistryKeys</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeys">GpoSecurityRegistryKeys</a>]
 
 ---
 
@@ -7087,7 +7087,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.property.keyName">key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.property.valueType">value_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValues">GpoSecurityRegistryValues</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValues">GpoSecurityRegistryValues</a>]</code> | *No description.* |
 
 ---
 
@@ -7178,10 +7178,10 @@ value_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GpoSecurityRegistryValues, IResolvable]
+internal_value: typing.Union[IResolvable, GpoSecurityRegistryValues]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValues">GpoSecurityRegistryValues</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValues">GpoSecurityRegistryValues</a>]
 
 ---
 
@@ -7598,7 +7598,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.property.groupMemberof">group_memberof</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.property.groupMembers">group_members</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.property.groupName">group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroups">GpoSecurityRestrictedGroups</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroups">GpoSecurityRestrictedGroups</a>]</code> | *No description.* |
 
 ---
 
@@ -7689,10 +7689,10 @@ group_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GpoSecurityRestrictedGroups, IResolvable]
+internal_value: typing.Union[IResolvable, GpoSecurityRestrictedGroups]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroups">GpoSecurityRestrictedGroups</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroups">GpoSecurityRestrictedGroups</a>]
 
 ---
 
@@ -8499,7 +8499,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.property.acl">acl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.property.serviceName">service_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.property.startupMode">startup_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServices">GpoSecuritySystemServices</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServices">GpoSecuritySystemServices</a>]</code> | *No description.* |
 
 ---
 
@@ -8590,10 +8590,10 @@ startup_mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GpoSecuritySystemServices, IResolvable]
+internal_value: typing.Union[IResolvable, GpoSecuritySystemServices]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServices">GpoSecuritySystemServices</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServices">GpoSecuritySystemServices</a>]
 
 ---
 
