@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GroupMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the group. This can be a GUID, a SID, a Distinguished Name, or the SAM Account Name of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership#group_id GroupMembership#group_id}
   */
   readonly groupId: string;
   /**
   * A list of member AD Principals. Each principal can be identified by its GUID, SID, Distinguished Name, or SAM Account Name. Only one is required
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group_membership#group_members GroupMembership#group_members}
   */
   readonly groupMembers: string[];

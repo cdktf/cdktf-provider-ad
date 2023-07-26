@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataAdOuConfig extends cdktf.TerraformMetaArguments {
   /**
   * Distinguished Name of the OU object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#dn DataAdOu#dn}
   */
   readonly dn?: string;
@@ -27,19 +27,19 @@ export interface DataAdOuConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the OU object. If this is used then the `path` attribute needs to be set as well.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#name DataAdOu#name}
   */
   readonly name?: string;
   /**
   * The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#ou_id DataAdOu#ou_id}
   */
   readonly ouId?: string;
   /**
   * Path of the OU object. If this is used then the `Name` attribute needs to be set as well.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#path DataAdOu#path}
   */
   readonly path?: string;

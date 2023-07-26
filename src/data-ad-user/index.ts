@@ -21,7 +21,7 @@ export interface DataAdUserConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The user's identifier. It can be the group's GUID, SID, Distinguished Name, or SAM Account Name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/user#user_id DataAdUser#user_id}
   */
   readonly userId: string;

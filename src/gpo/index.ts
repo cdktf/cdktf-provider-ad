@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GpoConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the GPO.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo#description Gpo#description}
   */
   readonly description?: string;
   /**
   * Domain of the GPO.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo#domain Gpo#domain}
   */
   readonly domain?: string;
@@ -33,13 +33,13 @@ export interface GpoConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the GPO.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo#name Gpo#name}
   */
   readonly name: string;
   /**
   * Status of the GPO. Can be one of `AllSettingsEnabled`, `UserSettingsDisabled`, `ComputerSettingsDisabled`, or `AllSettingsDisabled` (case sensitive).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo#status Gpo#status}
   */
   readonly status?: string;

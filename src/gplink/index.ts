@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface GplinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Controls the state of the GP link between a GPO and a container object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#enabled Gplink#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * If set to true, the GPO will be enforced on the container object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#enforced Gplink#enforced}
   */
   readonly enforced?: boolean | cdktf.IResolvable;
   /**
   * The GUID of the GPO that will be linked to the container object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#gpo_guid Gplink#gpo_guid}
   */
   readonly gpoGuid: string;
@@ -39,13 +39,13 @@ export interface GplinkConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Sets the precedence between multiple GPOs linked to the same container object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#order Gplink#order}
   */
   readonly order?: number;
   /**
   * The DN of the object the GPO will be linked to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gplink#target_dn Gplink#target_dn}
   */
   readonly targetDn: string;

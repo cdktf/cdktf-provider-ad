@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface DataAdComputerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The OU's identifier. It can be the OU's GUID, SID, Distinguished Name, or SAM Account Name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#computer_id DataAdComputer#computer_id}
   */
   readonly computerId?: string;
   /**
   * The Distinguished Name of the computer object. This field is deprecated in favour of `computer_id`. In the future this field will be read-only.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#dn DataAdComputer#dn}
   */
   readonly dn?: string;
   /**
   * The GUID of the computer object. This field is deprecated in favour of `computer_id`. In the future this field will be read-only.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/computer#guid DataAdComputer#guid}
   */
   readonly guid?: string;
