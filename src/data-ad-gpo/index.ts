@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAdGpoConfig extends cdktf.TerraformMetaArguments {
   /**
   * GUID of the GPO.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo#guid DataAdGpo#guid}
   */
   readonly guid?: string;
@@ -27,7 +22,7 @@ export interface DataAdGpoConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the GPO.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo#name DataAdGpo#name}
   */
   readonly name?: string;

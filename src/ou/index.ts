@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface OuConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the OU.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#description Ou#description}
   */
   readonly description?: string;
@@ -27,19 +22,19 @@ export interface OuConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the OU.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#name Ou#name}
   */
   readonly name: string;
   /**
   * DN of the object that contains the OU.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#path Ou#path}
   */
   readonly path?: string;
   /**
   * Protect this OU from being deleted accidentaly.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/ou#protected Ou#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;

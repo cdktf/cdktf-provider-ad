@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The group's category. Can be one of `distribution` or `security` (case sensitive).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#category Group#category}
   */
   readonly category?: string;
   /**
   * A DN of a container object holding the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#container Group#container}
   */
   readonly container: string;
   /**
   * Description of the Group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#description Group#description}
   */
   readonly description?: string;
@@ -39,19 +34,19 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
   * The pre-win2k name of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#sam_account_name Group#sam_account_name}
   */
   readonly samAccountName: string;
   /**
   * The group's scope. Can be one of `global`, `domainlocal`, or `universal` (case sensitive).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/group#scope Group#scope}
   */
   readonly scope?: string;

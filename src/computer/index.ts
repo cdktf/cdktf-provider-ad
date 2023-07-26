@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface ComputerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The DN of the container used to hold the computer account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#container Computer#container}
   */
   readonly container?: string;
   /**
   * Specifies a description of the object. This parameter sets the value of the Description property for the computer object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#description Computer#description}
   */
   readonly description?: string;
@@ -33,13 +28,13 @@ export interface ComputerConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name for the computer account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#name Computer#name}
   */
   readonly name: string;
   /**
   * The pre-win2k name for the computer account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/computer#pre2kname Computer#pre2kname}
   */
   readonly pre2Kname?: string;
