@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v6/dataadgroup"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgroup"
 
 dataadgroup.NewDataAdGroup(scope Construct, id *string, config DataAdGroupConfig) DataAdGroup
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v6/dataadgroup"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgroup"
 
 dataadgroup.DataAdGroup_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v6/dataadgroup"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgroup"
 
 dataadgroup.DataAdGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataadgroup.DataAdGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdGroup.DataAdGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v6/dataadgroup"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgroup"
 
 dataadgroup.DataAdGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -643,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdGroup.DataAdGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v6/dataadgroup"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgroup"
 
 &dataadgroup.DataAdGroupConfig {
 	Connection: interface{},
