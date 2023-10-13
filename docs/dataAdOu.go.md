@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdOu.DataAdOu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
 
 dataadou.NewDataAdOu(scope Construct, id *string, config DataAdOuConfig) DataAdOu
 ```
@@ -305,7 +305,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
 
 dataadou.DataAdOu_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
 
 dataadou.DataAdOu_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataadou.DataAdOu_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
 
 dataadou.DataAdOu_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdOu.DataAdOuConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
 
 &dataadou.DataAdOuConfig {
 	Connection: interface{},
