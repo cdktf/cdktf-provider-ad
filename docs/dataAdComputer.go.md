@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadcomputer"
 
 dataadcomputer.NewDataAdComputer(scope Construct, id *string, config DataAdComputerConfig) DataAdComputer
 ```
@@ -299,7 +299,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadcomputer"
 
 dataadcomputer.DataAdComputer_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadcomputer"
 
 dataadcomputer.DataAdComputer_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataadcomputer.DataAdComputer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadcomputer"
 
 dataadcomputer.DataAdComputer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataadcomputer.DataAdComputer_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.dataAdComputer.DataAdComputer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadcomputer"
 
 dataadcomputer.DataAdComputer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdComputer.DataAdComputerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadcomputer"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadcomputer"
 
 &dataadcomputer.DataAdComputerConfig {
 	Connection: interface{},
