@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurity(scope Construct, id *string, config GpoSecurityConfig) GpoSecurity
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.putAccountLockout">PutAccountLockout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.putApplicationLog">PutApplicationLog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.putAuditLog">PutAuditLog</a></code> | *No description.* |
@@ -161,6 +164,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.getAnyMapAttribute"></a>
 
@@ -270,6 +289,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.interpolationForAttribute"></a>
 
 ```go
@@ -279,6 +316,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -511,13 +572,14 @@ func ResetSystemServices()
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpoSecurity.GpoSecurity.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a GpoSecurity resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.GpoSecurity_IsConstruct(x interface{}) *bool
 ```
@@ -549,7 +611,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.GpoSecurity_IsTerraformElement(x interface{}) *bool
 ```
@@ -563,7 +625,7 @@ gposecurity.GpoSecurity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.GpoSecurity_IsTerraformResource(x interface{}) *bool
 ```
@@ -571,6 +633,50 @@ gposecurity.GpoSecurity_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
+
+gposecurity.GpoSecurity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a GpoSecurity resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the GpoSecurity to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing GpoSecurity that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ad.gpoSecurity.GpoSecurity.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the GpoSecurity to import is found.
 
 ---
 
@@ -1070,7 +1176,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityAccountLockout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityAccountLockout {
 	ForceLogoffWhenHourExpire: *string,
@@ -1152,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityApplicationLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityApplicationLog {
 	AuditLogRetentionPeriod: *string,
@@ -1236,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityAuditLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityAuditLog {
 	AuditLogRetentionPeriod: *string,
@@ -1320,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityConfig {
 	Connection: interface{},
@@ -1331,18 +1437,18 @@ import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	GpoContainer: *string,
-	AccountLockout: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecurityAccountLockout,
-	ApplicationLog: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecurityApplicationLog,
-	AuditLog: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecurityAuditLog,
-	EventAudit: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecurityEventAudit,
+	AccountLockout: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecurityAccountLockout,
+	ApplicationLog: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecurityApplicationLog,
+	AuditLog: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecurityAuditLog,
+	EventAudit: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecurityEventAudit,
 	Filesystem: interface{},
 	Id: *string,
-	KerberosPolicy: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecurityKerberosPolicy,
-	PasswordPolicies: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecurityPasswordPolicies,
+	KerberosPolicy: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecurityKerberosPolicy,
+	PasswordPolicies: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecurityPasswordPolicies,
 	RegistryKeys: interface{},
 	RegistryValues: interface{},
 	RestrictedGroups: interface{},
-	SystemLog: github.com/cdktf/cdktf-provider-ad-go/ad/v7.gpoSecurity.GpoSecuritySystemLog,
+	SystemLog: github.com/cdktf/cdktf-provider-ad-go/ad.gpoSecurity.GpoSecuritySystemLog,
 	SystemServices: interface{},
 }
 ```
@@ -1647,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityEventAudit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityEventAudit {
 	AuditAccountLogon: *string,
@@ -1809,7 +1915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityFilesystem {
 	Acl: *string,
@@ -1877,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityKerberosPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityKerberosPolicy {
 	MaxClockSkew: *string,
@@ -1977,7 +2083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityPasswordPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityPasswordPolicies {
 	ClearTextPassword: *string,
@@ -2097,7 +2203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityRegistryKeys {
 	Acl: *string,
@@ -2165,7 +2271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityRegistryValues {
 	KeyName: *string,
@@ -2231,7 +2337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecurityRestrictedGroups {
 	GroupMemberof: *string,
@@ -2297,7 +2403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecuritySystemLog {
 	AuditLogRetentionPeriod: *string,
@@ -2381,7 +2487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 &gposecurity.GpoSecuritySystemServices {
 	Acl: *string,
@@ -2449,7 +2555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityAccountLockoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityAccountLockoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecurityAccountLockoutOutputReference
 ```
@@ -2814,7 +2920,7 @@ func InternalValue() GpoSecurityAccountLockout
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityApplicationLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityApplicationLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecurityApplicationLogOutputReference
 ```
@@ -3179,7 +3285,7 @@ func InternalValue() GpoSecurityApplicationLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityAuditLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityAuditLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecurityAuditLogOutputReference
 ```
@@ -3544,7 +3650,7 @@ func InternalValue() GpoSecurityAuditLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityEventAuditOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityEventAuditOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecurityEventAuditOutputReference
 ```
@@ -4054,7 +4160,7 @@ func InternalValue() GpoSecurityEventAudit
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityFilesystemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GpoSecurityFilesystemList
 ```
@@ -4197,7 +4303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityFilesystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityFilesystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GpoSecurityFilesystemOutputReference
 ```
@@ -4530,7 +4636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityKerberosPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityKerberosPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecurityKerberosPolicyOutputReference
 ```
@@ -4924,7 +5030,7 @@ func InternalValue() GpoSecurityKerberosPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityPasswordPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityPasswordPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecurityPasswordPoliciesOutputReference
 ```
@@ -5347,7 +5453,7 @@ func InternalValue() GpoSecurityPasswordPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityRegistryKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GpoSecurityRegistryKeysList
 ```
@@ -5490,7 +5596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityRegistryKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GpoSecurityRegistryKeysOutputReference
 ```
@@ -5823,7 +5929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityRegistryValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GpoSecurityRegistryValuesList
 ```
@@ -5966,7 +6072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRegistryValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityRegistryValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GpoSecurityRegistryValuesOutputReference
 ```
@@ -6299,7 +6405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityRestrictedGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GpoSecurityRestrictedGroupsList
 ```
@@ -6442,7 +6548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecurityRestrictedGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecurityRestrictedGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GpoSecurityRestrictedGroupsOutputReference
 ```
@@ -6775,7 +6881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecuritySystemLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GpoSecuritySystemLogOutputReference
 ```
@@ -7140,7 +7246,7 @@ func InternalValue() GpoSecuritySystemLog
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecuritySystemServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GpoSecuritySystemServicesList
 ```
@@ -7283,7 +7389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpoSecurity.GpoSecuritySystemServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gposecurity"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/gposecurity"
 
 gposecurity.NewGpoSecuritySystemServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GpoSecuritySystemServicesOutputReference
 ```
