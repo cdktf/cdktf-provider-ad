@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou
 // generated from terraform resource schema
 
@@ -54,6 +49,20 @@ export class DataAdOu extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "ad_ou";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAdOu resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAdOu to import
+  * @param importFromId The id of the existing DataAdOu that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/ou#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAdOu to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "ad_ou", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -175,6 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-ad.gpo.Gpo.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -184,7 +185,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpo.Gpo.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpo.Gpo.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.resetDomain">resetDomain</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.resetId">resetId</a></code> | *No description.* |
@@ -255,6 +258,22 @@ public java.lang.Object toTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-ad.gpo.Gpo.addMoveTarget"></a>
+
+```java
+public void addMoveTarget(java.lang.String moveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-ad.gpo.Gpo.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ad.gpo.Gpo.getAnyMapAttribute"></a>
 
@@ -364,6 +383,25 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-ad.gpo.Gpo.importFrom"></a>
+
+```java
+public void importFrom(java.lang.String id)
+public void importFrom(java.lang.String id, TerraformProvider provider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ad.gpo.Gpo.importFrom.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ad.gpo.Gpo.importFrom.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ad.gpo.Gpo.interpolationForAttribute"></a>
 
 ```java
@@ -373,6 +411,31 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ad.gpo.Gpo.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-ad.gpo.Gpo.moveTo"></a>
+
+```java
+public void moveTo(java.lang.String moveTarget)
+public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-ad.gpo.Gpo.moveTo.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-ad.gpo.Gpo.moveTo.parameter.index"></a>
+
+- *Type:* java.lang.String OR java.lang.Number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -407,6 +470,7 @@ public void resetStatus()
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.gpo.Gpo.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ad.gpo.Gpo.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a Gpo resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -467,6 +531,50 @@ Gpo.isTerraformResource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ad.gpo.Gpo.isTerraformResource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-ad.gpo.Gpo.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ad.gpo.Gpo;
+
+Gpo.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),Gpo.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a Gpo resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-ad.gpo.Gpo.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-ad.gpo.Gpo.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the Gpo to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-ad.gpo.Gpo.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing Gpo that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ad.gpo.Gpo.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the Gpo to import is found.
 
 ---
 
