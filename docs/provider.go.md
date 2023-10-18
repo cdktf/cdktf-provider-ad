@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.provider.AdProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/provider"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/provider"
 
 provider.NewAdProvider(scope Construct, id *string, config AdProviderConfig) AdProvider
 ```
@@ -218,7 +218,7 @@ func ResetWinrmUseNtlm()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.provider.AdProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/provider"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/provider"
 
 provider.AdProvider_IsConstruct(x interface{}) *bool
 ```
@@ -250,7 +250,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.provider.AdProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/provider"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/provider"
 
 provider.AdProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -264,7 +264,7 @@ provider.AdProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-ad.provider.AdProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/provider"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/provider"
 
 provider.AdProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -278,7 +278,7 @@ provider.AdProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.provider.AdProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/provider"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/provider"
 
 provider.AdProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.provider.AdProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/provider"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/provider"
 
 &provider.AdProviderConfig {
 	WinrmHostname: *string,
