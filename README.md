@@ -1,7 +1,9 @@
 
-# Terraform CDK ad Provider ~> 0.4
+# Terraform CDK ad Provider tracks ~> 0.4
 
 This repo builds and publishes the Terraform ad Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on ad 0.4.4
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform ad Provider version 1:1. I
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform ad Provider](https://registry.terraform.io/providers/hashicorp/ad/0.4.0)
+- [Terraform ad Provider](https://registry.terraform.io/providers/hashicorp/ad/0.4.4)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-ad/releases)
 - [Terraform Engine](https://terraform.io)
 
