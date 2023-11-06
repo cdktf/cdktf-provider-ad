@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdUser.DataAdUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataaduser"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataaduser"
 
 dataaduser.NewDataAdUser(scope Construct, id *string, config DataAdUserConfig) DataAdUser
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataaduser"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataaduser"
 
 dataaduser.DataAdUser_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataaduser"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataaduser"
 
 dataaduser.DataAdUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataaduser.DataAdUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdUser.DataAdUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataaduser"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataaduser"
 
 dataaduser.DataAdUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataaduser.DataAdUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.dataAdUser.DataAdUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataaduser"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataaduser"
 
 dataaduser.DataAdUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -963,7 +963,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdUser.DataAdUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataaduser"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataaduser"
 
 &dataaduser.DataAdUserConfig {
 	Connection: interface{},
