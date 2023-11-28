@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gpo.Gpo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gpo"
 
 gpo.NewGpo(scope Construct, id *string, config GpoConfig) Gpo
 ```
@@ -356,7 +356,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.gpo.Gpo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gpo"
 
 gpo.Gpo_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.gpo.Gpo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gpo"
 
 gpo.Gpo_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ gpo.Gpo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.gpo.Gpo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gpo"
 
 gpo.Gpo_IsTerraformResource(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ gpo.Gpo_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.gpo.Gpo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gpo"
 
 gpo.Gpo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gpo.GpoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/gpo"
 
 &gpo.GpoConfig {
 	Connection: interface{},
