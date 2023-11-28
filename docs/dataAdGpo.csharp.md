@@ -1,7 +1,3 @@
-# `data_ad_gpo`
-
-Refer to the Terraform Registory for docs: [`data_ad_gpo`](https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/data-sources/gpo).
-
 # `dataAdGpo` Submodule <a name="`dataAdGpo` Submodule" id="@cdktf/provider-ad.dataAdGpo"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
