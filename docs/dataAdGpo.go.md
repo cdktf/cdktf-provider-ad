@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/dataadgpo"
 
 dataadgpo.NewDataAdGpo(scope Construct, id *string, config DataAdGpoConfig) DataAdGpo
 ```
@@ -297,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/dataadgpo"
 
 dataadgpo.DataAdGpo_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/dataadgpo"
 
 dataadgpo.DataAdGpo_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataadgpo.DataAdGpo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/dataadgpo"
 
 dataadgpo.DataAdGpo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataadgpo.DataAdGpo_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/dataadgpo"
 
 dataadgpo.DataAdGpo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdGpo.DataAdGpoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/dataadgpo"
 
 &dataadgpo.DataAdGpoConfig {
 	Connection: interface{},
