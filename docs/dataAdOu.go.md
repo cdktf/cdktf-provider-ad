@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdOu.DataAdOu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.NewDataAdOu(scope Construct, id *string, config DataAdOuConfig) DataAdOu
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.dataAdOu.DataAdOu.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -123,6 +124,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ad.dataAdOu.DataAdOu.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ad.dataAdOu.DataAdOu.toMetadata"></a>
 
@@ -302,7 +311,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ dataadou.DataAdOu_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdOu.DataAdOu.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -362,7 +371,7 @@ dataadou.DataAdOu_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.dataAdOu.DataAdOu.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 dataadou.DataAdOu_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdOu.DataAdOuConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadou"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadou"
 
 &dataadou.DataAdOuConfig {
 	Connection: interface{},

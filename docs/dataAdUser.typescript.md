@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.toHclTerraform">toHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.dataAdUser.DataAdUser.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-ad.dataAdUser.DataAdUser.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-ad.dataAdUser.DataAdUser.toMetadata"></a>
 

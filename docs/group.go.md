@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ad.group.Group.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.group.Group.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ad.group.Group.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ad.group.Group.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.group.Group.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.group.Group.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.group.Group.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ad.group.Group.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ad.group.Group.toMetadata"></a>
 
@@ -399,7 +406,7 @@ func ResetScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.group.Group.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
 
 group.Group_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/group"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/group"
 
 &group.GroupConfig {
 	Connection: interface{},

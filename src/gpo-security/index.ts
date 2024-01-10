@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/ad/0.4.4/docs/resources/gpo_security
 // generated from terraform resource schema
 
@@ -136,6 +131,43 @@ export function gpoSecurityAccountLockoutToTerraform(struct?: GpoSecurityAccount
     lockout_duration: cdktf.stringToTerraform(struct!.lockoutDuration),
     reset_lockout_count: cdktf.stringToTerraform(struct!.resetLockoutCount),
   }
+}
+
+
+export function gpoSecurityAccountLockoutToHclTerraform(struct?: GpoSecurityAccountLockoutOutputReference | GpoSecurityAccountLockout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    force_logoff_when_hour_expire: {
+      value: cdktf.stringToHclTerraform(struct!.forceLogoffWhenHourExpire),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lockout_bad_count: {
+      value: cdktf.stringToHclTerraform(struct!.lockoutBadCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lockout_duration: {
+      value: cdktf.stringToHclTerraform(struct!.lockoutDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reset_lockout_count: {
+      value: cdktf.stringToHclTerraform(struct!.resetLockoutCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecurityAccountLockoutOutputReference extends cdktf.ComplexObject {
@@ -292,6 +324,43 @@ export function gpoSecurityApplicationLogToTerraform(struct?: GpoSecurityApplica
   }
 }
 
+
+export function gpoSecurityApplicationLogToHclTerraform(struct?: GpoSecurityApplicationLogOutputReference | GpoSecurityApplicationLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_log_retention_period: {
+      value: cdktf.stringToHclTerraform(struct!.auditLogRetentionPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maximum_log_size: {
+      value: cdktf.stringToHclTerraform(struct!.maximumLogSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    restrict_guest_access: {
+      value: cdktf.stringToHclTerraform(struct!.restrictGuestAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_days: {
+      value: cdktf.stringToHclTerraform(struct!.retentionDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GpoSecurityApplicationLogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -444,6 +513,43 @@ export function gpoSecurityAuditLogToTerraform(struct?: GpoSecurityAuditLogOutpu
     restrict_guest_access: cdktf.stringToTerraform(struct!.restrictGuestAccess),
     retention_days: cdktf.stringToTerraform(struct!.retentionDays),
   }
+}
+
+
+export function gpoSecurityAuditLogToHclTerraform(struct?: GpoSecurityAuditLogOutputReference | GpoSecurityAuditLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_log_retention_period: {
+      value: cdktf.stringToHclTerraform(struct!.auditLogRetentionPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maximum_log_size: {
+      value: cdktf.stringToHclTerraform(struct!.maximumLogSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    restrict_guest_access: {
+      value: cdktf.stringToHclTerraform(struct!.restrictGuestAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_days: {
+      value: cdktf.stringToHclTerraform(struct!.retentionDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecurityAuditLogOutputReference extends cdktf.ComplexObject {
@@ -633,6 +739,73 @@ export function gpoSecurityEventAuditToTerraform(struct?: GpoSecurityEventAuditO
     audit_process_tracking: cdktf.stringToTerraform(struct!.auditProcessTracking),
     audit_system_events: cdktf.stringToTerraform(struct!.auditSystemEvents),
   }
+}
+
+
+export function gpoSecurityEventAuditToHclTerraform(struct?: GpoSecurityEventAuditOutputReference | GpoSecurityEventAudit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_account_logon: {
+      value: cdktf.stringToHclTerraform(struct!.auditAccountLogon),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_account_manage: {
+      value: cdktf.stringToHclTerraform(struct!.auditAccountManage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_ds_access: {
+      value: cdktf.stringToHclTerraform(struct!.auditDsAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_logon_events: {
+      value: cdktf.stringToHclTerraform(struct!.auditLogonEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_object_access: {
+      value: cdktf.stringToHclTerraform(struct!.auditObjectAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_policy_change: {
+      value: cdktf.stringToHclTerraform(struct!.auditPolicyChange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_privilege_use: {
+      value: cdktf.stringToHclTerraform(struct!.auditPrivilegeUse),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_process_tracking: {
+      value: cdktf.stringToHclTerraform(struct!.auditProcessTracking),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    audit_system_events: {
+      value: cdktf.stringToHclTerraform(struct!.auditSystemEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecurityEventAuditOutputReference extends cdktf.ComplexObject {
@@ -892,6 +1065,37 @@ export function gpoSecurityFilesystemToTerraform(struct?: GpoSecurityFilesystem 
   }
 }
 
+
+export function gpoSecurityFilesystemToHclTerraform(struct?: GpoSecurityFilesystem | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acl: {
+      value: cdktf.stringToHclTerraform(struct!.acl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    propagation_mode: {
+      value: cdktf.stringToHclTerraform(struct!.propagationMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GpoSecurityFilesystemOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1052,6 +1256,49 @@ export function gpoSecurityKerberosPolicyToTerraform(struct?: GpoSecurityKerbero
     max_ticket_age: cdktf.stringToTerraform(struct!.maxTicketAge),
     ticket_validate_client: cdktf.stringToTerraform(struct!.ticketValidateClient),
   }
+}
+
+
+export function gpoSecurityKerberosPolicyToHclTerraform(struct?: GpoSecurityKerberosPolicyOutputReference | GpoSecurityKerberosPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_clock_skew: {
+      value: cdktf.stringToHclTerraform(struct!.maxClockSkew),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_renew_age: {
+      value: cdktf.stringToHclTerraform(struct!.maxRenewAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_service_age: {
+      value: cdktf.stringToHclTerraform(struct!.maxServiceAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_ticket_age: {
+      value: cdktf.stringToHclTerraform(struct!.maxTicketAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ticket_validate_client: {
+      value: cdktf.stringToHclTerraform(struct!.ticketValidateClient),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecurityKerberosPolicyOutputReference extends cdktf.ComplexObject {
@@ -1242,6 +1489,55 @@ export function gpoSecurityPasswordPoliciesToTerraform(struct?: GpoSecurityPassw
     password_complexity: cdktf.stringToTerraform(struct!.passwordComplexity),
     password_history_size: cdktf.stringToTerraform(struct!.passwordHistorySize),
   }
+}
+
+
+export function gpoSecurityPasswordPoliciesToHclTerraform(struct?: GpoSecurityPasswordPoliciesOutputReference | GpoSecurityPasswordPolicies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    clear_text_password: {
+      value: cdktf.stringToHclTerraform(struct!.clearTextPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maximum_password_age: {
+      value: cdktf.stringToHclTerraform(struct!.maximumPasswordAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    minimum_password_age: {
+      value: cdktf.stringToHclTerraform(struct!.minimumPasswordAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    minimum_password_length: {
+      value: cdktf.stringToHclTerraform(struct!.minimumPasswordLength),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password_complexity: {
+      value: cdktf.stringToHclTerraform(struct!.passwordComplexity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password_history_size: {
+      value: cdktf.stringToHclTerraform(struct!.passwordHistorySize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecurityPasswordPoliciesOutputReference extends cdktf.ComplexObject {
@@ -1435,6 +1731,37 @@ export function gpoSecurityRegistryKeysToTerraform(struct?: GpoSecurityRegistryK
   }
 }
 
+
+export function gpoSecurityRegistryKeysToHclTerraform(struct?: GpoSecurityRegistryKeys | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acl: {
+      value: cdktf.stringToHclTerraform(struct!.acl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_name: {
+      value: cdktf.stringToHclTerraform(struct!.keyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    propagation_mode: {
+      value: cdktf.stringToHclTerraform(struct!.propagationMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GpoSecurityRegistryKeysOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1583,6 +1910,37 @@ export function gpoSecurityRegistryValuesToTerraform(struct?: GpoSecurityRegistr
   }
 }
 
+
+export function gpoSecurityRegistryValuesToHclTerraform(struct?: GpoSecurityRegistryValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_name: {
+      value: cdktf.stringToHclTerraform(struct!.keyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GpoSecurityRegistryValuesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1729,6 +2087,37 @@ export function gpoSecurityRestrictedGroupsToTerraform(struct?: GpoSecurityRestr
     group_members: cdktf.stringToTerraform(struct!.groupMembers),
     group_name: cdktf.stringToTerraform(struct!.groupName),
   }
+}
+
+
+export function gpoSecurityRestrictedGroupsToHclTerraform(struct?: GpoSecurityRestrictedGroups | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_memberof: {
+      value: cdktf.stringToHclTerraform(struct!.groupMemberof),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_members: {
+      value: cdktf.stringToHclTerraform(struct!.groupMembers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_name: {
+      value: cdktf.stringToHclTerraform(struct!.groupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecurityRestrictedGroupsOutputReference extends cdktf.ComplexObject {
@@ -1886,6 +2275,43 @@ export function gpoSecuritySystemLogToTerraform(struct?: GpoSecuritySystemLogOut
   }
 }
 
+
+export function gpoSecuritySystemLogToHclTerraform(struct?: GpoSecuritySystemLogOutputReference | GpoSecuritySystemLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_log_retention_period: {
+      value: cdktf.stringToHclTerraform(struct!.auditLogRetentionPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maximum_log_size: {
+      value: cdktf.stringToHclTerraform(struct!.maximumLogSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    restrict_guest_access: {
+      value: cdktf.stringToHclTerraform(struct!.restrictGuestAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retention_days: {
+      value: cdktf.stringToHclTerraform(struct!.retentionDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GpoSecuritySystemLogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2031,6 +2457,37 @@ export function gpoSecuritySystemServicesToTerraform(struct?: GpoSecuritySystemS
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     startup_mode: cdktf.stringToTerraform(struct!.startupMode),
   }
+}
+
+
+export function gpoSecuritySystemServicesToHclTerraform(struct?: GpoSecuritySystemServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    acl: {
+      value: cdktf.stringToHclTerraform(struct!.acl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    startup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.startupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GpoSecuritySystemServicesOutputReference extends cdktf.ComplexObject {
@@ -2462,5 +2919,97 @@ export class GpoSecurity extends cdktf.TerraformResource {
       system_log: gpoSecuritySystemLogToTerraform(this._systemLog.internalValue),
       system_services: cdktf.listMapper(gpoSecuritySystemServicesToTerraform, true)(this._systemServices.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      gpo_container: {
+        value: cdktf.stringToHclTerraform(this._gpoContainer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_lockout: {
+        value: gpoSecurityAccountLockoutToHclTerraform(this._accountLockout.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecurityAccountLockoutList",
+      },
+      application_log: {
+        value: gpoSecurityApplicationLogToHclTerraform(this._applicationLog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecurityApplicationLogList",
+      },
+      audit_log: {
+        value: gpoSecurityAuditLogToHclTerraform(this._auditLog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecurityAuditLogList",
+      },
+      event_audit: {
+        value: gpoSecurityEventAuditToHclTerraform(this._eventAudit.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecurityEventAuditList",
+      },
+      filesystem: {
+        value: cdktf.listMapperHcl(gpoSecurityFilesystemToHclTerraform, true)(this._filesystem.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GpoSecurityFilesystemList",
+      },
+      kerberos_policy: {
+        value: gpoSecurityKerberosPolicyToHclTerraform(this._kerberosPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecurityKerberosPolicyList",
+      },
+      password_policies: {
+        value: gpoSecurityPasswordPoliciesToHclTerraform(this._passwordPolicies.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecurityPasswordPoliciesList",
+      },
+      registry_keys: {
+        value: cdktf.listMapperHcl(gpoSecurityRegistryKeysToHclTerraform, true)(this._registryKeys.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GpoSecurityRegistryKeysList",
+      },
+      registry_values: {
+        value: cdktf.listMapperHcl(gpoSecurityRegistryValuesToHclTerraform, true)(this._registryValues.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GpoSecurityRegistryValuesList",
+      },
+      restricted_groups: {
+        value: cdktf.listMapperHcl(gpoSecurityRestrictedGroupsToHclTerraform, true)(this._restrictedGroups.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GpoSecurityRestrictedGroupsList",
+      },
+      system_log: {
+        value: gpoSecuritySystemLogToHclTerraform(this._systemLog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GpoSecuritySystemLogList",
+      },
+      system_services: {
+        value: cdktf.listMapperHcl(gpoSecuritySystemServicesToHclTerraform, true)(this._systemServices.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GpoSecuritySystemServicesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

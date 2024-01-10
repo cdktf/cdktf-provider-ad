@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
 
 dataadgpo.NewDataAdGpo(scope Construct, id *string, config DataAdGpoConfig) DataAdGpo
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ad.dataAdGpo.DataAdGpo.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
 
 dataadgpo.DataAdGpo_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
 
 dataadgpo.DataAdGpo_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataadgpo.DataAdGpo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
 
 dataadgpo.DataAdGpo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ dataadgpo.DataAdGpo_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.dataAdGpo.DataAdGpo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
 
 dataadgpo.DataAdGpo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -632,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.dataAdGpo.DataAdGpoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/v7/dataadgpo"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/dataadgpo"
 
 &dataadgpo.DataAdGpoConfig {
 	Connection: interface{},
