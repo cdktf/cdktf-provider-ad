@@ -218,4 +218,48 @@ export class Gplink extends cdktf.TerraformResource {
       target_dn: cdktf.stringToTerraform(this._targetDn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enforced: {
+        value: cdktf.booleanToHclTerraform(this._enforced),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      gpo_guid: {
+        value: cdktf.stringToHclTerraform(this._gpoGuid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      order: {
+        value: cdktf.numberToHclTerraform(this._order),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      target_dn: {
+        value: cdktf.stringToHclTerraform(this._targetDn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

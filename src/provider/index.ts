@@ -400,4 +400,96 @@ export class AdProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_controller: {
+        value: cdktf.stringToHclTerraform(this._domainController),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      krb_conf: {
+        value: cdktf.stringToHclTerraform(this._krbConf),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      krb_keytab: {
+        value: cdktf.stringToHclTerraform(this._krbKeytab),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      krb_realm: {
+        value: cdktf.stringToHclTerraform(this._krbRealm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      krb_spn: {
+        value: cdktf.stringToHclTerraform(this._krbSpn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      winrm_hostname: {
+        value: cdktf.stringToHclTerraform(this._winrmHostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      winrm_insecure: {
+        value: cdktf.booleanToHclTerraform(this._winrmInsecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      winrm_pass_credentials: {
+        value: cdktf.booleanToHclTerraform(this._winrmPassCredentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      winrm_password: {
+        value: cdktf.stringToHclTerraform(this._winrmPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      winrm_port: {
+        value: cdktf.numberToHclTerraform(this._winrmPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      winrm_proto: {
+        value: cdktf.stringToHclTerraform(this._winrmProto),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      winrm_use_ntlm: {
+        value: cdktf.booleanToHclTerraform(this._winrmUseNtlm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      winrm_username: {
+        value: cdktf.stringToHclTerraform(this._winrmUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

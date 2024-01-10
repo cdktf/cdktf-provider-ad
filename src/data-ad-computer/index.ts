@@ -186,4 +186,36 @@ export class DataAdComputer extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      computer_id: {
+        value: cdktf.stringToHclTerraform(this._computerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dn: {
+        value: cdktf.stringToHclTerraform(this._dn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      guid: {
+        value: cdktf.stringToHclTerraform(this._guid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
