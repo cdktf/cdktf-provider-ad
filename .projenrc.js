@@ -13,7 +13,7 @@ const project = new CdktfProviderProject({
   jsiiVersion: "~5.2.0",
   typescriptVersion: "~5.2.0", // NOTE: this should be the same major/minor version as JSII
   devDeps: ["@cdktf/provider-project@^0.5.0"],
-  isDeprecated: false,
+  isDeprecated: true,
 });
 
 project.synth();

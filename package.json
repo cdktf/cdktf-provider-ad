@@ -8,7 +8,6 @@
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
-    "check-if-new-provider-version": "npx projen check-if-new-provider-version",
     "clobber": "npx projen clobber",
     "compat": "npx projen compat",
     "compile": "jsii --silence-warnings=reserved-word",
@@ -24,13 +23,11 @@
     "package:js": "npx projen package:js",
     "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
-    "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
     "test": "jest --passWithNoTests",
     "unbump": "npx projen unbump",
     "unconditional-bump": "npx projen unconditional-bump",
-    "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
     "projen": "npx projen",
     "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
@@ -57,7 +54,6 @@
     "jsii-pacmak": "^1.94.0",
     "jsii-rosetta": "~5.2.0",
     "projen": "^0.79.0",
-    "semver": "^7.5.3",
     "standard-version": "^9",
     "typescript": "~5.2.0"
   },
@@ -151,7 +147,7 @@
     ]
   },
   "cdktf": {
-    "isDeprecated": false,
+    "isDeprecated": true,
     "provider": {
       "name": "registry.terraform.io/hashicorp/ad",
       "version": "0.4.4"
