@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/ad/0.4.4/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-ad.gplink.Gplink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gplink"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/gplink"
 
 gplink.NewGplink(scope Construct, id *string, config GplinkConfig) Gplink
 ```
@@ -406,7 +406,7 @@ func ResetOrder()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ad.gplink.Gplink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gplink"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/gplink"
 
 gplink.Gplink_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ad.gplink.Gplink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gplink"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/gplink"
 
 gplink.Gplink_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ gplink.Gplink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ad.gplink.Gplink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gplink"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/gplink"
 
 gplink.Gplink_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ gplink.Gplink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ad.gplink.Gplink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gplink"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/gplink"
 
 gplink.Gplink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ad.gplink.GplinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ad-go/ad/gplink"
+import "github.com/cdktf/cdktf-provider-ad-go/ad/v8/gplink"
 
 &gplink.GplinkConfig {
 	Connection: interface{},
